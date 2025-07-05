@@ -1,0 +1,14 @@
+{
+  "configurations": [
+    {
+      "compilerPath": "D:\\Users\\Administrator\\Downloads\\x86_64-8.1.0-release-posix-seh-rt_v6-rev0\\mingw64\\bin\\g++.exe",
+      "cppStandard": "c++17",
+      "includePath": [
+        "${{workspaceFolder}}/**"
+      ],
+      "intelliSenseMode": "windows-gcc-x64",
+      "name": "Win32"
+    }
+  ],
+  "version": 4
+}
