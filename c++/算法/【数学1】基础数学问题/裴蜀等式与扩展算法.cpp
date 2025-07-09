@@ -24,19 +24,18 @@ int read()
     }
     return x * w; 
 }
-int tuoou(int a,int b,int &x,int &y)  //扩展欧几里得算法
+int exgcd(int a, int b, int &x, int &y) // 扩展欧几里得算法
 {
-    if(b==0)
+    if (b == 0)
     {
-        x=1;
-        y=0;
+        x = 1, y = 0;
         return a;
     }
-    int t=tuoou(b,a%b,y,x);
-    int x1=y;
-    int y1=x-(a/b)*y;
-    x=x1;y=y1;
-    return t;
+    int r = exgcd(b, a % b, x, y);
+    int temp = y;
+    y = x - (a / b) * y;
+    x = temp;
+    return r;
 }
 int oula(int x)
 {

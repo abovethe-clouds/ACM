@@ -24,18 +24,65 @@ int read()
     }
     return x * w; 
 }
+ll fast_pow(ll x,ll y,ll mod)
+{
+    ll ans = 1;
+    while (y)
+    {
+        if(y%2)
+        {
+            ans = ans * x % mod;
+        }
+        y /= 2;
+        x = x * x % mod;
+    }
+    return ans;
+}
 int oula(int x)
 {
-    int ans=x;
-    for (int i = 2; i * i < x; i++)
+    int phi = x;
+    for (int i = 2; i * i <= x; i++)
     {
-        
+        if (x % i == 0)
+        {
+            phi /= i;
+            phi *= i - 1;
+            while (x % i==0)
+            {
+                x /= i;
+            }
+        }
     }
-    
+    if (x > 1)
+        phi = phi / x * (x - 1);
+    return phi;
+}
+ll exponent(string s, ll phi)
+{
+    string p = to_string(phi);
+    ll exp = 0;
+    if(s.length()<=p.length())
+    {
+        for (auto i : s)
+        {
+            exp = exp * 10 + (i - '0');
+        }
+        return exp;
+    }
+    for (auto i : s)
+    {
+        exp = exp * 10 + (i - '0');
+        if(exp>=phi)
+            exp %= phi;
+    }
+    return exp + phi;
 }
 void solve()
 {
-    
+    ll a, m;
+    string s;
+    cin >> a >> m >> s;
+    cout << fast_pow(a, exponent(s, oula(m)), m);
 }
 int main()
 {
@@ -43,8 +90,8 @@ int main()
     cin.tie(nullptr);
     cout.tie(nullptr);
     #ifndef ONLINE_JUDGE 
-        freopen("test.in", "r", stdin);
-        freopen("test.out", "w", stdout);
+        // freopen("test.in", "r", stdin);
+        // freopen("test.out", "w", stdout);
     #endif
     int t = 1;
     //cin >> t;

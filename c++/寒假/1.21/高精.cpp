@@ -161,6 +161,48 @@ void div(string str1,string str2,string &quotient,string &residue)
     quotient.erase(0,quotient.find_first_not_of('0'));
     if(quotient.empty()) quotient="0";
 }
+string mod(const string &a, const string &b)
+{
+    string rem = "";
+    for (char c : a)
+    {
+        // 把下一个十进制位拉进 rem
+        rem.push_back(c);
+        // 去掉前导 0
+        rem.erase(0, rem.find_first_not_of('0'));
+        if (rem.empty())
+            rem = "0";
+
+        // 在 rem 上做“试商” 0～9，但不记录商，只更新 rem
+        int low = 0, high = 9, best = 0;
+        while (low <= high)
+        {
+            int mid = (low + high) >> 1;
+            // 计算 b * mid
+            string prod = mul(b, to_string(mid));
+            if (prod.size() < rem.size() ||
+                (prod.size() == rem.size() && prod <= rem))
+            {
+                best = mid;
+                low = mid + 1;
+            }
+            else
+            {
+                high = mid - 1;
+            }
+        }
+        // rem = rem - b * best
+        if (best != 0)
+        {
+            string prod = mul(b, to_string(best));
+            rem = sub(rem, prod);
+        }
+    }
+    // 最终 rem 就是 a % b
+    if (rem.empty())
+        return "0";
+    return rem;
+}
 int main()
 {
      string str1,str2,str3,str4;

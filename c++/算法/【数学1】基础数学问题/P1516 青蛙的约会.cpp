@@ -8,6 +8,7 @@ typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+#define int ll
 int read()
 {
     int x = 0, w = 1;
@@ -25,20 +26,18 @@ int read()
     }
     return x * w;
 }
-int tuoou(int a, int b, int &x, int &y) // 扩展欧几里得算法
+int exgcd(int a, int b, int &x, int &y) // 扩展欧几里得算法
 {
     if (b == 0)
     {
-        x = 1;
-        y = 0;
+        x = 1, y = 0;
         return a;
     }
-    int t = tuoou(b, a % b, y, x);
-    int x1 = y;
-    int y1 = x - (a / b) * y;
-    x = x1;
-    y = y1;
-    return t;
+    int r = exgcd(b, a % b, x, y);
+    int temp = y;
+    y = x - (a / b) * y;
+    x = temp;
+    return r;
 }
 int oula(int x)
 {
@@ -60,21 +59,36 @@ int oula(int x)
 }
 void solve()
 {
-    int a, b, c, d, x, y;
-    cin >> a >> b;
-    cout << tuoou(a, b, c, d);
-    // a 在% mod下的逆元
-    tuoou(a, mod, x, y);
-    cout << x;
+    int x, y, m, n, l;
+    cin >> x >> y >> m >> n >> l;
+    int a = m - n, b = l, c = y - x;
+    int x1, y1;
+    int gcd = exgcd(a, b, x1, y1);
+    if(c%gcd)
+    {
+        cout << "Impossible";
+        return;
+    }
+    a /= gcd;
+    b /= gcd;
+    c /= gcd;
+    //(ax+by=1)
+    int u = x1 % b;
+    if(u<0)
+        u += b;
+    int k = (u * (c % b)) % b;
+    if(k<0)
+        k += b;
+    cout << k;
 }
-int main()
+signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    freopen("test.in", "r", stdin);
-    freopen("test.out", "w", stdout);
+    // freopen("test.in", "r", stdin);
+    // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
     // cin >> t;
