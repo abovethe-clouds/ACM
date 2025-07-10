@@ -7,31 +7,36 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-bool isprime[1000000];
-int prime[100000],prim=1;
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=1e8+5;
+bool isprime[maxn];
+int prime[maxn],prim=1;
 void solve()
 {
-    for (int i = 1; i < 1000000; i++)
+    int n, m;
+    cin >> n >> m;
+    for (int i = 1; i < maxn; i++)
     {
         isprime[i]=1;
     }
-    for (int i = 2; i < 1000000; i++)
+    for (int i = 2; i < maxn; i++)
     {
         if(isprime[i])
         {
             prime[prim++]=i;
         }
-        for (int j = 1; j < prim&&i*prime[j]<1000000; j++)
+        for (int j = 1; j < prim && i * prime[j] < maxn; j++)
         {
             isprime[i*prime[j]]=0;
             if(i%prime[j]==0)
                 break;
         }
     }
-    for (int i = 1; i < 10000; i++)
+    
+    for (int i = 1; i <= m; i++)
     {
-        cout<<prime[i]<<",";
+        int a;
+        cin >> a;
+        cout << prime[a] << endl;
     } 
 }
 int main()
