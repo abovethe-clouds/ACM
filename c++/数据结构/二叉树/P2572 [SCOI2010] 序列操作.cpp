@@ -181,7 +181,7 @@ void built(int root,int l,int r)
     {
         tree[root].end_long=1;
         tree[root].first_long=1;
-
+        return;;
     }
     int mid=(l+r)/2;
     built(ls(root),l,mid);
