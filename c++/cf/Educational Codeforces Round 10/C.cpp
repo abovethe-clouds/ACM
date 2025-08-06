@@ -29,7 +29,7 @@ int read()
 void solve()
 {
     const int n=read(), m=read();
-    int a[n], pos[n+1];
+    int a[n+1], pos[n+1];
     for (int i = 1; i <= n; i++)
     {
         a[i] = read();
@@ -44,18 +44,16 @@ void solve()
         int posx = pos[x], posy = pos[y];
         if (posx > posy)
             swap(posx, posy);
-        z[posx]=posy;
+        z[posx]=min(z[posx], posy);
     }
-    int ans = 0;
-    for (int i = 1; i <= n; i++)
+    ll ans = 0;
+    int r = n + 1;
+    for (int l = n; l >= 1; l--)
     {
-        int r=n;
-        for (int j=i; j<=r && j<=n; j++)
-        {
-            r=min(z[pos[a[i]]]-1,r);
-        }
-        ans+=r-i+1;
+        r = min(r, z[l]);
+        ans += r - l;
     }
+
     cout<<ans<<endl;
 
 }
