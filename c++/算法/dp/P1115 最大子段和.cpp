@@ -2,7 +2,7 @@
 using namespace std;
 #define fir first
 #define sec second
-#define endl "\n"   
+#define endl "\n"
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
@@ -23,7 +23,7 @@ void solve()
         max1=max(max1,b[i]);
     }
     cout<<max1;
-        
+
 }
 int main()
 {
