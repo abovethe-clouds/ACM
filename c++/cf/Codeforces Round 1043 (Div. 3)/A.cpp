@@ -28,21 +28,24 @@ int read()
 
 void solve()
 {
-    int n;
-    cin >> n;
-    string s;
-    int ans = 0;
-    while (cin >> s)
+    int n,m;string a,b,c;
+    cin>>n>>a>>m>>b>>c;
+    deque<char> q;
+    for(int i=0;i<n;i++)
+        q.push_back(a[i]);
+    for(int i=0;i<m;i++)
     {
-        int cnt = 0;
-        for (auto i: s)
-        {
-            if (i >= 'A' && i <= 'Z')
-                cnt++;
-        }
-        ans = max(ans, cnt);
+        if (c[i]=='V')//头
+            q.push_front(b[i]);
+        else
+            q.push_back(b[i]);
     }
-    cout << ans << endl;
+    while(!q.empty())
+    {
+        cout<<q.front();
+        q.pop_front();
+    }
+    cout<<endl;
 }
 
 int main()
@@ -55,10 +58,8 @@ int main()
     //freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //cin >> t;
+    cin >> t;
     while (t--)
         solve();
     return 0;
-} //
-// Created by Administrator on 2025/8/27.
-//
+}

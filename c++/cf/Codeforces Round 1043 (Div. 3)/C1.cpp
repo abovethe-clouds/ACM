@@ -9,9 +9,9 @@ typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
-int read()
+ll read()
 {
-    int x = 0, w = 1;
+    ll x = 0, w = 1;
     char ch = 0;
     while (ch < '0' || ch > '9')
     {
@@ -25,24 +25,23 @@ int read()
     }
     return x * w;
 }
-
+ll pow_3[22];
 void solve()
 {
-    int n;
-    cin >> n;
-    string s;
-    int ans = 0;
-    while (cin >> s)
+    ll n=read(),money=0;
+    for (int i = 20; i >=0; i--)
     {
-        int cnt = 0;
-        for (auto i: s)
+        if (n>=pow_3[i])
         {
-            if (i >= 'A' && i <= 'Z')
-                cnt++;
+            int cnt=n/pow_3[i];
+            n-=cnt*pow_3[i];
+            if (i!=0)
+                money+=cnt*(pow_3[i+1]+i*pow_3[i-1]);
+            else
+                money+=cnt*3;
         }
-        ans = max(ans, cnt);
     }
-    cout << ans << endl;
+    cout<<money<<endl;
 }
 
 int main()
@@ -54,11 +53,13 @@ int main()
     //freopen("test.in", "r", stdin);
     //freopen("test.out", "w", stdout);
 #endif
-    int t = 1;
-    //cin >> t;
+    int t = read();
+    pow_3[0]=1;
+    for (int i = 1; i <= 21; i++)
+    {
+        pow_3[i] = pow_3[i - 1] * 3;
+    }
     while (t--)
         solve();
     return 0;
-} //
-// Created by Administrator on 2025/8/27.
-//
+}

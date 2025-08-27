@@ -28,21 +28,29 @@ int read()
 
 void solve()
 {
-    int n;
-    cin >> n;
     string s;
-    int ans = 0;
-    while (cin >> s)
+    cin >> s;
+    vector<char> minString(s.length() + 1);
+    minString[s.length()] = 'z' + 1;
+    for (int i = s.length() - 1; i >= 0; i--)
     {
-        int cnt = 0;
-        for (auto i: s)
-        {
-            if (i >= 'A' && i <= 'Z')
-                cnt++;
-        }
-        ans = max(ans, cnt);
+        minString[i] = min(s[i], minString[i + 1]);
     }
-    cout << ans << endl;
+    stack<char> st;
+    for (int i=0;i<s.length();i++)
+    {
+        st.push(s[i]);
+        while (!st.empty() && st.top() <= minString[i+1])
+        {
+            cout << st.top();
+            st.pop();
+        }
+    }
+    while (st.empty() == false)
+    {
+        cout << st.top();
+        st.pop();
+    }
 }
 
 int main()
@@ -60,5 +68,5 @@ int main()
         solve();
     return 0;
 } //
-// Created by Administrator on 2025/8/27.
+// Created by Administrator on 25-8-18.
 //
