@@ -28,18 +28,45 @@ int read()
 
 void solve()
 {
-    int n,k;
-    bool uesd[n+1]={},permutation[n+1]={};
-    int a[n];
-    for (int i = 0; i < n; i++)
+    int n = read(), k = read();
+    bool used[n + 1] = {};
+    int permutation[n + 1] = {};
+    int a[k];
+    for (int i = 0; i < k; i++)
         a[i] = read();
-    for (int i = 1; i < n; i++)
+    for (int i = 1; i < k; i++)
     {
-        int pre=a[i-1],next=a[i];
-        if (pre<next)
+        int pre = a[i - 1], next = a[i], sub;
+        if (pre < next)
         {
-            int
+            sub = next - pre;
+        } else
+        {
+            sub = next + (n - pre);
         }
+        if ((used[sub] == 1 && permutation[pre] == sub) ^ (used[sub] == 0 && permutation[pre] == 0))
+        {
+            permutation[pre] = sub;
+            used[sub] = 1;
+        } else
+        {
+            cout << -1 << endl;
+            return;
+        }
+    }
+    vector<int> unUes;
+    for (int i = 1; i <= n; i++)
+    {
+        if (used[i] == 0)
+            unUes.push_back(i);
+    }
+    auto it = unUes.begin();
+    for (int i = 1; i <= n; i++)
+    {
+        if (permutation[i] == 0)
+            cout << *it++ << endl;
+        else
+            cout << permutation[i] << " ";
     }
 }
 
@@ -57,6 +84,6 @@ int main()
     while (t--)
         solve();
     return 0;
-}//
+} //
 // Created by Administrator on 2025/8/25.
 //
