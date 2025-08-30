@@ -29,15 +29,23 @@ int read()
 void solve()
 {
     const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
+    vector<int> a(n);
+    for(int i=0;i<n;i++)
         a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
-        cout<<"YES"<<endl;
+    vector<int> b(n);
+    for(int i=0;i<n;i++)
+        b[i]=a[i];
+    sort(begin(a),end(a));
+    int cnt=0;
+    for(int i=0;i<n;i++)
+    {
+        if (a[i]!=b[i])
+            cnt++;
+    }
+    if (cnt<=2)
+        cout<<"Sorted"<<endl;
     else
-        cout<<"NO"<<endl;
-    return;
+        cout<<"Failed"<<endl;
 }
 
 int main()
@@ -55,5 +63,5 @@ int main()
         solve();
     return 0;
 }//
-// Created by Administrator on 2025/8/28.
+// Created by Administrator on 2025/8/29.
 //

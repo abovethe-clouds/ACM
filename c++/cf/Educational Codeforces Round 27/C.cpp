@@ -28,16 +28,32 @@ int read()
 
 void solve()
 {
-    const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
-        a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
-        cout<<"YES"<<endl;
-    else
-        cout<<"NO"<<endl;
-    return;
+    const int N=read();
+    vector<pii> A(N);
+    for(int i=0;i<N;i++)
+        A[i].first=read(), A[i].second=read();
+    sort(A.begin(), A.end());
+    int one=-1,two=-1;
+    for(int i=0;i<N;i++)
+    {
+        if (one<A[i].first)
+        {
+            one=A[i].second;
+            continue;
+        }
+        else if(two<A[i].first)
+        {
+            two=A[i].second;
+            continue;
+        }
+        else
+        {
+            cout<<"NO"<<endl;
+            return;
+        }
+    }
+    cout<<"YES"<<endl;
+
 }
 
 int main()

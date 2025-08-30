@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
-    cin<<123 <<456
+    int a,b;
+    cin >> a >> b;
+    cout << a+b<<endl;
 }
 

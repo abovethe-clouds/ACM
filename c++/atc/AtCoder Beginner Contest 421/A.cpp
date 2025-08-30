@@ -28,16 +28,19 @@ int read()
 
 void solve()
 {
-    const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
-        a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
-        cout<<"YES"<<endl;
+    map<int,string> mp;
+     int n;
+    cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        cin>>mp[i];
+    }
+    string s;
+    cin>>n>>s;
+    if (mp[n]==s)
+        cout<<"Yes\n";
     else
-        cout<<"NO"<<endl;
-    return;
+        cout<<"No\n";
 }
 
 int main()
@@ -55,5 +58,5 @@ int main()
         solve();
     return 0;
 }//
-// Created by Administrator on 2025/8/28.
+// Created by Administrator on 2025/8/30.
 //

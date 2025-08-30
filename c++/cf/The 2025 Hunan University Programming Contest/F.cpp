@@ -29,15 +29,31 @@ int read()
 void solve()
 {
     const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
+    vector<int> a(n);
+    for(int i=0;i<n;i++)
         a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
+    if (n==1)
+    {
         cout<<"YES"<<endl;
-    else
+        return;
+    }
+    if (!(a[0]%2==1 && a[n-1]%2==1))
+    {
         cout<<"NO"<<endl;
-    return;
+        return;
+    }
+    else
+    {
+        for (int i=1;i<n-1;i++)
+        {
+            if (a[i]%2==1)
+            {
+                cout<<"NO"<<endl;
+                return;
+            }
+        }
+    }
+    cout<<"YES"<<endl;
 }
 
 int main()
@@ -49,11 +65,11 @@ int main()
     //freopen("test.in", "r", stdin);
     //freopen("test.out", "w", stdout);
 #endif
-    int t = 1;
-    //cin >> t;
+    int t = read();
+
     while (t--)
         solve();
     return 0;
 }//
-// Created by Administrator on 2025/8/28.
+// Created by Administrator on 2025/8/29.
 //

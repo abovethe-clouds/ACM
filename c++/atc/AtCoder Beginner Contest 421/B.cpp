@@ -8,7 +8,7 @@ typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-
+#define int ll
 int read()
 {
     int x = 0, w = 1;
@@ -25,22 +25,29 @@ int read()
     }
     return x * w;
 }
-
+int add(int x,int y)
+{
+    int sum=x+y;
+    int ans=0;
+    while(sum)
+    {
+        ans=ans*10+sum%10;
+        sum/=10;
+    }
+    return ans;
+}
 void solve()
 {
-    const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
-        a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
-        cout<<"YES"<<endl;
-    else
-        cout<<"NO"<<endl;
-    return;
+    int a[11]={};
+    cin>>a[1]>>a[2];
+    for (int i=3;i<11;i++)
+    {
+        a[i]=add(a[i-1],a[i-2]);
+    }
+    cout<<a[10];
 }
 
-int main()
+signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
@@ -55,5 +62,5 @@ int main()
         solve();
     return 0;
 }//
-// Created by Administrator on 2025/8/28.
+// Created by Administrator on 2025/8/30.
 //

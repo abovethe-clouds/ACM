@@ -28,16 +28,7 @@ int read()
 
 void solve()
 {
-    const int n=read();
-    vector<int> a(n*2);
-    for (int i=0;i<n*2;i++)
-        a[i]=read();
-    sort(a.begin(), a.end());
-    if (a[n]>a[n-1])
-        cout<<"YES"<<endl;
-    else
-        cout<<"NO"<<endl;
-    return;
+    
 }
 
 int main()
@@ -55,5 +46,5 @@ int main()
         solve();
     return 0;
 }//
-// Created by Administrator on 2025/8/28.
+// Created by Administrator on 2025/8/29.
 //
