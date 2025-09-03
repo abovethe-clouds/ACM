@@ -2,7 +2,7 @@
 using namespace std;
 #define fir first
 #define sec second
-#define endl "\n"
+
 typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
@@ -25,28 +25,65 @@ int read()
     }
     return x * w;
 }
-pii U(pii x)
+pii U(pii x,int l)
 {
-    x.first--;
+    x.first-=l;
     return x;
 }
-pii D(pii x)
+pii D(pii x,int l)
 {
-    x.first++;
+    x.first+=l;
     return x;
 }
-pii R(pii x)
+pii R(pii x,int l)
 {
-    x.second++;
+    x.second+=l;
     return x;
 }
-pii L(pii x)
+pii L(pii x,int l)
 {
-    x.second--;
+    x.second-=l;
     return x;
+}
+bool operator==(const pii &a,const pii &b)
+{
+    return a.second==b.second&&a.first==b.first;
+}
+bool judge(pii x,pii y)
+{
+    return abs(x.first-y.first)==abs(x.second-y.second);
 }
 void solve()
 {
+    pii t,a,whereT={0,0},whereA={0,0};
+    cin>>t.first>>t.second>>a.first>>a.second;
+    int n,m,l;
+    cin>>n>>m>>l;
+    pair<char,int> T[m],A[l];
+    for(int i=0;i<m;i++)
+    {
+        cin>>T[i].first>>T[i].second;
+    }
+    for(int i=0;i<l;i++)
+    {
+        cin>>A[i].first>>A[i].second;
+    }
+    int ans=0;
+    if (t==a||judge(a,t))
+    {
+        if (t==a)
+        {
+            if (T[whereA.first]==A[whereT.first])
+            {
+                ans=
+            }
+        }
+    }
+    else
+    {
+
+    }
+
 
 }
 
