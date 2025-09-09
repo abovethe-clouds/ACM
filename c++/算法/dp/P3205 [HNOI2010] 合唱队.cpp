@@ -42,7 +42,7 @@ int dfs(int l,int r)
         return (dp[l][r][0]+dp[l][r][1])%mod;
     if (a[l]<a[r])
         dp[l][r][0] = (dp[l][r][0]+dp[l+1][r][1])%mod;
-    if 
+    if ((
 }
 void solve()
 {
