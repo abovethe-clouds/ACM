@@ -8,7 +8,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
-constexpr int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 int read()
 {
     int x = 0, w = 1;
@@ -28,38 +28,22 @@ int read()
 
 void solve()
 {
-    int n;
-    cin >> n;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++)
+    const int N=read();
+    vector<pii> v(N);
+    for(int i=0;i<N;i++)
+        v[i].first=read(), v[i].second=read();
+    sort(v.begin(), v.end(),[](pii a,pii b)
     {
-        cin >> a[i];
-    }
-    ll ans = 0;
-    for (int i = 0; i < n; i++)
+        if (a.first!=b.first)
+            return a.first<b.first;
+        return a.second<b.second;
+    });
+    int ans=0;
+    for(int i=0;i<N-1;i++)
     {
-        if (i % 2) ans -= a[i];
-        else ans += a[i];
-    }
-    ll init = ans;
+        auto b=*v.begin(), e=*v.end()-1;
 
-    for (int i = 0; i < n; i++) ans = max(ans, init + i - (i % 2));
-
-    ll min_even = LLONG_MAX / 2, min_odd = LLONG_MAX / 2;
-    for (int i = 0; i < n; i++)
-    {
-        if (i % 2)
-        {
-            ans = max(init + i + a[i] + a[i] - min_even, ans);
-            min_odd = min(min_odd, i - a[i] - a[i]);
-        }
-        else
-        {
-            ans = max(init + i - a[i] - a[i] - min_odd, ans);
-            min_even = min(min_even, i + a[i] + a[i]);
-        }
     }
-    cout << ans << '\n';
 }
 
 signed main()
@@ -72,8 +56,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    cin>>t;
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/9/13.
+//
