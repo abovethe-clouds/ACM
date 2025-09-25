@@ -4,11 +4,11 @@ using namespace std;
 #define sec second
 #define endl "\n"
 typedef long long ll;
+#define int long long
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-
 int read()
 {
     int x = 0, w = 1;
@@ -25,46 +25,48 @@ int read()
     }
     return x * w;
 }
-int n;
-int dp[1005][1005][2],a[1005];
-int dfs(int l,int r)
-{
-    if (l+1==r)
-    {
-        if (a[r]>a[l])
-        {
-            dp[l][r][0] = 1;
-            dp[l][r][1] = 1;
-        }
-        return (dp[l][r][0]+dp[l][r][1])%mod;
-    }
-    if (dp[l][r][0]!=-1&&dp[l][r][1]!=-1)
-        return (dp[l][r][0]+dp[l][r][1])%mod;
-    if (a[l]<a[r])
-        dp[l][r][0] = (dp[l][r][0]+dp[l+1][r][1])%mod;
-    if ()
-}
+
 void solve()
 {
-    memset(dp, -1, sizeof(dp));
-    n=read();
-    for (int i = 1; i <= n; i++)
-        a[i] = read();
-    cout<<dfs(1,n);
+    int n=read(),m=read();
+    vector<int> v(m);
+    for(int i=0;i<m;i++)
+        v[i]=read();
+    if (m==1)
+    {
+        int x=v[0];
+        cout<<n-x+1<<endl;
+        return;
+    }
+    int maxn=v[0];
+    for(int i=1;i<m;i++)
+    {
+        if (v[i]<=v[i-1])
+        {
+            cout<<1<<endl;
+            return;
+        }
+        maxn=v[i];
+    }
+    cout<<n-maxn+1<<endl;
+    return;
 }
 
-int main()
+signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    //freopen("test.in", "r", stdin);
-    //freopen("test.out", "w", stdout);
+    // freopen("test.in", "r", stdin);
+    // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //cin >> t;
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/9/25.
+//

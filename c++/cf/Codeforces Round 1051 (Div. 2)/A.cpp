@@ -4,11 +4,11 @@ using namespace std;
 #define sec second
 #define endl "\n"
 typedef long long ll;
+#define int long long
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-
 int read()
 {
     int x = 0, w = 1;
@@ -25,46 +25,49 @@ int read()
     }
     return x * w;
 }
-int n;
-int dp[1005][1005][2],a[1005];
-int dfs(int l,int r)
-{
-    if (l+1==r)
-    {
-        if (a[r]>a[l])
-        {
-            dp[l][r][0] = 1;
-            dp[l][r][1] = 1;
-        }
-        return (dp[l][r][0]+dp[l][r][1])%mod;
-    }
-    if (dp[l][r][0]!=-1&&dp[l][r][1]!=-1)
-        return (dp[l][r][0]+dp[l][r][1])%mod;
-    if (a[l]<a[r])
-        dp[l][r][0] = (dp[l][r][0]+dp[l+1][r][1])%mod;
-    if ()
-}
+
 void solve()
 {
-    memset(dp, -1, sizeof(dp));
-    n=read();
-    for (int i = 1; i <= n; i++)
-        a[i] = read();
-    cout<<dfs(1,n);
+    const int N = read();
+    vector<pii> v(N);
+    for (int i = 0; i < N; i++)
+        v[i].first = read(), v[i].second = i;
+    sort(v.begin(), v.end(),[](pii a,pii b){return a.fir>b.fir;});
+    int l=v[0].second,r=v[0].second;
+    for (int i=0;i<N;i++)
+    {
+        if (v[i].second<l-1||v[i].second>r+1)
+        {
+            cout<<"NO"<<endl;
+            return;
+        }
+        if (v[i].second<l)
+        {
+            l=v[i].second;
+        }
+        if (v[i].second>r)
+        {
+            r=v[i].second;
+        }
+    }
+    cout<<"YES"<<endl;
 }
 
-int main()
+signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    //freopen("test.in", "r", stdin);
-    //freopen("test.out", "w", stdout);
+    // freopen("test.in", "r", stdin);
+    // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //cin >> t;
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/9/18.
+//
