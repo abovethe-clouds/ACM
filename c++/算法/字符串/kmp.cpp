@@ -2,60 +2,82 @@
 using namespace std;
 #define fir first
 #define sec second
-#define endl "\n"   
+#define endl "\n"
 typedef long long ll;
+#define int long long
 typedef unsigned long long ull;
-typedef pair<int,int> pii;
+typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131, maxn=1e6+5;
-char a[maxn],b[maxn];
-int kmp[maxn];
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+int read()
+{
+    int x = 0, w = 1;
+    char ch = 0;
+    while (ch < '0' || ch > '9')
+    {
+        if (ch == '-') w = -1;
+        ch = getchar();
+    }
+    while (ch >= '0' && ch <= '9')
+    {
+        x = x * 10 + (ch - '0');
+        ch = getchar();
+    }
+    return x * w;
+}
+
 void solve()
 {
-    cin>>a+1;
-    cin>>b+1;
-    int l1=strlen(a+1);
-    int l2=strlen(b+1);
-    int j=0;
-    for(int i=2;i<=l2;i++)
+    string s1,s2;
+    cin>>s1>>s2;
+    vector<int> next(s2.length()+1);
+    next[0]=-1,next[1]=0;
     {
-        while(j&&b[i]!=b[j+1])
-            j=kmp[j];
-        if(b[i]==b[j+1])
-            j++;
-        kmp[i]=j;
-    }
-    j=0;
-    for (int i = 1; i <= l1; i++)
-    {
-        while(j&&a[i]!=b[j+1])
-            j=kmp[j];
-        if(a[i]==b[j+1])
-            j++;
-        if(j==l2)
+        int i=2,cn=0;
+        while(i<s2.length())
         {
-            cout<<i-l2+1<<endl;
-            j=kmp[j];
+            if(s2[i-1]==s2[cn])
+            {
+                next[i++]=++cn;
+            }
+            else if(cn>0)
+            {
+                cn=next[cn];
+            }
+            else
+            {
+                cn=0;
+                next[i++]=cn;
+            }
         }
     }
-    
-    for (int i = 1; i <= l2; i++)
     {
-        cout<<kmp[i]<<" ";
+        int x=0,y=0;
+        while(x<s1.length()&&y<s2.length())
+        {
+            if(s1[x]==s2[y])
+                x++,y++;
+            else if(y==0)
+                x++;
+            else
+                y=next[y];
+        }
+        cout<<((y==s2.length())?(x-y+1):-1);
     }
-    
-
 }
-int main()
+
+signed main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-
+#ifndef ONLINE_JUDGE
+    // freopen("test.in", "r", stdin);
+    // freopen("test.out", "w", stdout);
+#endif
     int t = 1;
-    //cin >> t;
-    while(t --)
+    //t=read();
+    while (t--)
         solve();
-
     return 0;
 }
