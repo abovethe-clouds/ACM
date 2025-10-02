@@ -57,7 +57,7 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    t=read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
