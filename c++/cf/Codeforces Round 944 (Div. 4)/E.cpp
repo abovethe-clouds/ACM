@@ -4,6 +4,7 @@ using namespace std;
 #define sec second
 #define endl "\n"
 typedef long long ll;
+#define int ll
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
@@ -28,10 +29,11 @@ int read()
 void solve()
 {
     int n = read(),k=read(),q=read();
-    vector<int> a(k),b(k);
-    for(int i=0;i<k;i++)
+    vector<int> a(k+1),b(k+1);
+    a[0]=0,b[0]=0;
+    for(int i=1;i<=k;i++)
         a[i]=read();
-    for(int i=0;i<k;i++)
+    for(int i=1;i<=k;i++)
         b[i]=read();
     while(q--)
     {
@@ -39,14 +41,16 @@ void solve()
         int where=lower_bound(a.begin(),a.end(),w)-a.begin();
         if (a[where]==w)
         {
-            cout<<b[where]<<endl;
+            cout<<b[where]<<" ";
             continue;
         }
+        where--;
         int l=a[where+1]-a[where];
         int time=b[where+1]-b[where];
-        double speed=l*1.0/time;
-        cout<<b[where]+((w-a[where])/speed)<<endl;
+
+        cout<< (b[where] + (((w - a[where]) * time / l)))<<" ";
     }
+    cout<<endl;
 }
 
 signed main()

@@ -28,42 +28,11 @@ int read()
 
 void solve()
 {
-    string s;
-    cin>>s;
-    int cnt0=0, cnt1=0;
-    for(int i=0;i<s.length();i++)
-    {
-        if(s[i]=='1')
-            cnt1++;
-        if(s[i]=='0')
-            cnt0++;
-    }
-    string s2=s;
-    sort(s2.begin(), s2.end());
-    if (s2==s)
-    {
-        cout<<1<<endl;
-        return;
-    }
-    int ans=0;
-    if (s[0]=='1')
-        ans++;
-    for(int i=1;i<cnt0;i++)
-    {
-        if(s[i]=='1'&&s[i-1]=='0')
-            ans++;
-    }
-    if (s[cnt0]=='0')
-        ans++;
-    for(int i=cnt0+1;i<s.length();i++)
-    {
-        if(s[i]=='0'&&s[i-1]=='1')
-            ans++;
-    }
-    ans++;
-    if (s[cnt0]=='0'&&s[cnt0-1]=='1')
-        ans--;
-    cout<<ans<<endl;
+    const int n=read();
+    vector<int> a(n);
+    for(int i=0;i<n;i++)
+        a[i]=read();
+
 }
 
 signed main()
@@ -76,7 +45,7 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    cin>>t;
+    t=read();
     while (t--)
         solve();
     return 0;
