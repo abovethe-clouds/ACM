@@ -32,7 +32,7 @@ int main()
         }
         zuonao=0;
         younao=0;
-        miin=18000;
+        miin=INT_MAX;
         dfs(i,1);
         sum+=miin;        
     }

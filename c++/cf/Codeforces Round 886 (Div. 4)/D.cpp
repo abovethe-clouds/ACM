@@ -27,8 +27,33 @@ int read()
 }
 void solve()
 {
+    int n = read(),k=read();
+    vector<int> v(n);
+    for (int i = 0; i < n; i++)
+        v[i] = read();
+    sort(v.begin(), v.end());
+    vector<int> dp(n);
+    dp[0]=0;
+    for (int i = 1; i < n; i++)
+    {
+        dp[i]=INT_MAX;
+        int where=lower_bound(v.begin(), v.end(), v[i]-k)-v.begin();
+        if (where==i)
+        {
+            dp[i]=i;
+            continue;
+        }
+        dp[i]=min(dp[i],dp[where]);
+    }
 
+    for (int i = 0; i < n; i++)
+    {
+        dp[i]=dp[i]+n-i-1;
+    }
+    sort(dp.begin(), dp.end());
+    cout<<dp[0]<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +64,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/5.
+//

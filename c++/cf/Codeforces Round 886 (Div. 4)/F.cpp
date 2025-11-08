@@ -27,7 +27,25 @@ int read()
 }
 void solve()
 {
-
+    int n = read();
+    vector<int> cnt(n+1,0);
+    map<int,int> mp;
+    for (int i = 0; i < n; i++)
+    {
+        mp[read()]++;
+    }
+    int maxn=0;
+    for (auto [l,v]: mp)
+    {
+        int lo=l;
+        while (lo<=n)
+        {
+            cnt[lo]+=v;
+            maxn=max(maxn,cnt[lo]);
+            lo+=l;
+        }
+    }
+    cout<<maxn<<endl;
 }
 signed main()
 {
@@ -39,8 +57,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/5.
+//

@@ -25,10 +25,23 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int n = read(),k=read(),sum=0;
+    vector<int> v(n);
+    for (int i = 0; i < n; i++)
+        v[i] = read();
+    sort(v.begin(), v.end());
+    for (int i = 0; i < n-2*k; i++)
+        sum += v[i];
+    for (int i = n-2*k; i < n-k; i++)
+    {
+        sum += v[i]/v[i+k];
+    }
+    cout<<sum<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +52,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/16.
+//

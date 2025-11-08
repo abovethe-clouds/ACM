@@ -25,10 +25,27 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int n=read(),m=read(),k=read();
+    vector<bool> is_friend(k+1,false);
+    vector<int> first_add(n+1,0);
+    int ans=0;
+    for(int i=1;i<=n;i++)
+        v[read()]=true;
+    for(int i=1;i<=m;i++)
+    {
+        int begin=read(),end=read();
+        if (is_friend[begin]==true&&is_friend[end]==true)
+            ans++;
+        else
+        {
+            if ((is_friend[begin]==true&&is_friend[end]==false)||(is_friend))
+        }
+    }
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +61,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/18.
+//

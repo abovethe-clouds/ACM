@@ -25,10 +25,20 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    vector<int> v(3);
+    for (int i=0; i<3; i++)
+        v[i]=read();
+    sort(v.begin(), v.end());
+    if (v[1]+v[2]>=10)
+        cout<<"YES"<<endl;
+    else
+        cout<<"NO"<<endl;
+    return;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,7 +49,7 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;

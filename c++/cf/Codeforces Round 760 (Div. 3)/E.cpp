@@ -25,10 +25,12 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int n = read();
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +46,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/16.
+//

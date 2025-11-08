@@ -1,6 +1,3 @@
-//
-// Created by Administrator on 2025/10/3.
-//
 #include<bits/stdc++.h>
 using namespace std;
 #define fir first
@@ -31,18 +28,46 @@ int read()
 
 void solve()
 {
-    int a=read(), b=read(), c=read();
-    if (a<b&&b<c)
+    string s;
+    cin >> s;
+    stack<char> st;
+    for (int i = 0; i < s.length(); i++)
     {
-        cout<<"STAIR"<<endl;
-        return;
+        if (st.empty())
+        {
+            if (s[i]=='2'&&i+1<s.length())
+                st.push(s[i+1]);
+            else
+                st.push(s[i]);
+        }
+        else
+        {
+            if (s[i]=='2')
+            {
+                st.pop();
+                continue;
+            }
+            else
+            {
+                if (s[i]==st.top())
+                {
+                    st.pop();
+                    continue;
+                }
+                else
+                {
+                    st.push(s[i]);
+                }
+            }
+        }
     }
-    if (a<b&&b>c)
+    cout<<st.size()<<endl;
+    while (!st.empty())
     {
-        cout<<"PEAK"<<endl;
-        return;
+        cout<<st.top()<<" ";
+        st.pop();
     }
-    cout<<"NONE"<<endl;
+    cout<<endl;
 }
 
 signed main()
@@ -55,8 +80,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    t=read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/18.
+//

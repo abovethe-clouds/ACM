@@ -25,10 +25,34 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
+    const int n=read();
+    vector<int> v(n+1,1);
+    v[0]=0;
+    int min_OS=0;
+    int Q=read();
+    while (Q--)
+    {
+        int x=read(),y=read();
+        if (x<=min_OS)
+        {
+            cout<<"0"<<endl;
+            continue;
+        }
+        int sum=0;
+        for (int i=min_OS+1;i<=x;i++)
+        {
+            sum+=v[i];
+        }
+        cout<<sum<<endl;
+        v[y]+=sum;
+        min_OS=x;
+    }
 
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +68,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/4.
+//

@@ -25,10 +25,37 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
+    int x, cnt = 2;
+    cin >> x;
+    string s[x - 2];
+    for (int i = 0; i < x - 2; i++)
+    {
+        cin >> s[i];
+    }
+    cout << s[0];
+    for (int i = 1; i < x - 2; i++)
+    {
+        if (s[i][0] == s[i - 1][1])
+        {
+            cout << s[i][1];
+            cnt += 1;
+        }
+        else
+        {
+            cout << s[i];
+            cnt += 2;
+        }
+    }
+    if (cnt!=x)
+        cout << 'b';
+    cout << '\n';
+
 
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +66,12 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    cin >> t;
     while (t--)
         solve();
     return 0;
 }
+
+//
+// Created by Administrator on 2025/10/16.
+//

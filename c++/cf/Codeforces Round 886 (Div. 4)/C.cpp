@@ -25,10 +25,36 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int where_x, where_y;
+    string s[8];
+    for (int i = 0; i < 8; i++)
+    {
+        cin>>s[i];
+        for (int j = 0; j < 8; j++)
+        {
+            if (s[i][j]!='.')
+                where_x=i, where_y=j;
+        }
+    }
+    stack<char> st;
+    for (int i = where_x; i >= 0; i--)
+    {
+        if (s[i][where_y]!='.')
+            st.push(s[i][where_y]);
+        else
+            break;
+    }
+    while (!st.empty())
+    {
+        cout<<st.top();
+        st.pop();
+    }
+    cout<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +65,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/5.
+//

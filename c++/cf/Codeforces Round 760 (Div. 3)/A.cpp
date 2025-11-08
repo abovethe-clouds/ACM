@@ -25,10 +25,15 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int a[7];
+    for (int i = 0; i < 7; i++)
+        a[i]=read();
+    cout<<a[0]<<" "<<a[1]<<" "<<a[6]-(a[0]+a[1])<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +44,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/16.
+//

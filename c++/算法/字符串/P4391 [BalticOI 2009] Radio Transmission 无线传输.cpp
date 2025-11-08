@@ -25,10 +25,35 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int  s1;string s2;
+    cin>>s1>>s2;
+    vector<int> next(s2.length()+1);
+    next[0]=-1,next[1]=0;
+    {
+        int i=2,cn=0;
+        while(i<=s1)
+        {
+            if(s2[i-1]==s2[cn])
+            {
+                next[i++]=++cn;
+            }
+            else if(cn>0)
+            {
+                cn=next[cn];
+            }
+            else
+            {
+                cn=0;
+                next[i++]=cn;
+            }
+        }
+    }
+    cout<<s1-next[s1];
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);

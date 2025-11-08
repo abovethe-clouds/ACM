@@ -25,10 +25,30 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
+    int n = read(),m=read();
+    vector<pii> mp[n+1];
+    vector<int> in(n+1,0);
+    for (int i = 1; i <= m; i++)
+    {
+        int end=read(),begin=read(),k=read();
+        mp[begin].push_back({end,k});
+        in[end]++;
+    }
+    queue<int> q;
+    for (int i = 1; i <= n; i++)
+    {
+        if (in[i]==0) q.push(i);
+    }
+    while (!q.empty())
+    {
+
+    }
 
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +64,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/5.
+//

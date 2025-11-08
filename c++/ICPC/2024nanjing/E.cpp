@@ -25,10 +25,46 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
+    int l,k;
+    cin>>l>>k;
+    string s;
+    cin>>s;
+    vector<int> v;
+    k=min(k,7ll);
+    int next[8]={-1,0,0,1,0,0,1,0};
+    string s2="nanjing";
+    for(int i=0;i<=k;i++)
+    {
+        int ans=0;
+        int x=0,y=0;
+        while (x<s.length())
+        {
+            while(x<s.length()&&y<s2.length())
+            {
+                if(s[x]==s2[y])
+                    x++,y++;
+                else if(y==0)
+                    x++;
+                else
+                    y=next[y];
+            }
+            if (y==s2.length())
+            {
+                ans++;
+                y=0;
+            }
+        }
+        v.push_back(ans);
+        rotate(s.begin(), s.begin() + 1, s.end());
+    }
+    sort(v.begin(),v.end());
+    cout<<v.back()<<endl;
 
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,7 +75,7 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    cin>>t;
     while (t--)
         solve();
     return 0;

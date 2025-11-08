@@ -25,22 +25,40 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    int h,m;
+    char ch;
+    cin>>h>>ch>>m;
+    bool is_am=true;
+    if (h>=12)
+    {
+        if (h>12) h-=12;
+        is_am=false;
+    }
+    else
+    {
+        if (h==0)
+            h=12;
+    }
+    printf("%02lld:%02lld ",h,m);
+    cout<<(is_am?"AM":"PM")<<endl;
 }
+
 signed main()
 {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    cout.tie(nullptr);
+
 #ifndef ONLINE_JUDGE
     // freopen("test.in", "r", stdin);
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/3.
+//

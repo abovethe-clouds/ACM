@@ -25,10 +25,26 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    string s;
+    cin>>s;
+    sort(s.begin(), s.end());
+    int cnt=0;
+    for(int i=0;i<s.size();i++)
+    {
+        if (s[i]==s[0])
+            cnt++;
+    }
+    if (cnt==1)
+    {
+        cout<<s[0]<<endl;
+        return;
+    }
+    cout<<s[s.length()-1]<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +60,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/4.
+//

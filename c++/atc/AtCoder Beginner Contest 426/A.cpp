@@ -25,10 +25,30 @@ int read()
     }
     return x * w;
 }
+
 void solve()
 {
-
+    string s1,s2;
+    cin>>s1>>s2;
+    if (s1==s2)
+    {
+        cout<<"Yes"<<endl;
+        return;
+    }
+    if (s1=="Lynx")
+    {
+        cout<<"Yes"<<endl;
+        return;
+    }
+    if (s1=="Serval"&&s2=="Ocelot")
+    {
+        cout<<"Yes"<<endl;
+        return;
+    }
+    cout<<"No"<<endl;
+    return;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +64,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/4.
+//

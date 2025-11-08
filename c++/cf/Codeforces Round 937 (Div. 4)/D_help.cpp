@@ -2,7 +2,7 @@
 using namespace std;
 #define fir first
 #define sec second
-#define endl "\n"
+
 typedef long long ll;
 #define int long long
 typedef unsigned long long ull;
@@ -25,10 +25,18 @@ int read()
     }
     return x * w;
 }
-void solve()
+void make2(int x)
 {
 
 }
+void solve()
+{
+    int n;
+    char ch;
+    cin>>n>>ch;
+    cout<<n<<',';
+}
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -44,3 +52,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/3.
+//

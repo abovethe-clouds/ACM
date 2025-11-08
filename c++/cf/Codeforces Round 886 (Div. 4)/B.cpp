@@ -25,10 +25,29 @@ int read()
     }
     return x * w;
 }
+struct point
+{
+    int x, y,num;
+};
 void solve()
 {
-
+    int n = read();
+    vector<point> v;
+    for (int i=0; i<n; i++)
+    {
+        int x=read(), y=read(), z=i+1;
+        if (x>10)
+            continue;
+        v.push_back({x,y,z});
+    }
+    sort(v.begin(), v.end(),[](const point &a, const point &b)
+    {
+        return a.y<b.y;
+    }
+        );
+    cout<<v[v.size()-1].num<<endl;
 }
+
 signed main()
 {
     ios::sync_with_stdio(false);
@@ -39,8 +58,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/10/5.
+//
