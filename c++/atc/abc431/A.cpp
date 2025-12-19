@@ -28,19 +28,8 @@ int read()
 
 void solve()
 {
-    int n=read(),m=read();
-    vector<int> v(n+1),sum(n+1);
-    for (int i=1;i<=n;i++)
-    {
-        v[i]=read();
-        sum[i]=v[i]+sum[i-1];
-    }
-    int ans=inf;
-    for (int i=m;i<=n;i++)
-    {
-        ans=min(ans,sum[i]-sum[i-m]);
-    }
-    cout<<ans<<endl;
+    int H=read(), B=read();
+    cout<<max(0ll,H-B);
 }
 
 signed main()
@@ -58,3 +47,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/11/20.
+//

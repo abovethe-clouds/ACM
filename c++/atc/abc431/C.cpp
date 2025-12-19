@@ -28,19 +28,35 @@ int read()
 
 void solve()
 {
-    int n=read(),m=read();
-    vector<int> v(n+1),sum(n+1);
-    for (int i=1;i<=n;i++)
+    int n = read(), m = read(), k = read();
+    vector<int> h(n), b(m);
+    for (int i = 0; i < n; i++)
+        h[i] = read();
+    for (int i = 0; i < m; i++)
+        b[i] = read();
+    sort(begin(b), end(b));
+    sort(h.begin(), h.end());
+    queue<int> q;
+    for (int i = 0; i < m; i++)
     {
-        v[i]=read();
-        sum[i]=v[i]+sum[i-1];
+        q.push(b[i]);
     }
-    int ans=inf;
-    for (int i=m;i<=n;i++)
+    int cnt = 0;
+    for (int i = 0; i < n; i++)
     {
-        ans=min(ans,sum[i]-sum[i-m]);
+        if (q.empty())
+            break;
+        while (!q.empty() && q.front() < h[i])
+            q.pop();
+        if (!q.empty() && q.front() >= h[i])
+            cnt++;
+        if (!q.empty())
+        {
+            q.pop();
+        }
     }
-    cout<<ans<<endl;
+    if (cnt >= k) cout << "Yes" << endl;
+    else cout << "No" << endl;
 }
 
 signed main()
@@ -58,3 +74,7 @@ signed main()
         solve();
     return 0;
 }
+
+//
+// Created by Administrator on 2025/11/20.
+//

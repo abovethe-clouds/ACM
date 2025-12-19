@@ -28,19 +28,28 @@ int read()
 
 void solve()
 {
-    int n=read(),m=read();
-    vector<int> v(n+1),sum(n+1);
-    for (int i=1;i<=n;i++)
+    int X=read(), N=read();
+    vector<int> W(N);
+    vector<bool> Flag(N, false);
+    for (int i = 0; i < N; i++)
+        W[i]=read();
+    int Q=read();
+    while (Q--)
     {
-        v[i]=read();
-        sum[i]=v[i]+sum[i-1];
+        int P=read();
+        P--;
+        if (Flag[P])
+        {
+            X-=W[P];
+            Flag[P]=false;
+        }
+        else
+        {
+            X+=W[P];
+            Flag[P]=true;
+        }
+        cout<<X<<endl;
     }
-    int ans=inf;
-    for (int i=m;i<=n;i++)
-    {
-        ans=min(ans,sum[i]-sum[i-m]);
-    }
-    cout<<ans<<endl;
 }
 
 signed main()
@@ -58,3 +67,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2025/11/20.
+//
