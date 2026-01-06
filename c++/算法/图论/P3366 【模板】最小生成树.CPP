@@ -61,7 +61,7 @@ void dij()
         cnt++;
         add(neww.e1,neww.e2);
     }
-    
+
 
 }
 void solve()

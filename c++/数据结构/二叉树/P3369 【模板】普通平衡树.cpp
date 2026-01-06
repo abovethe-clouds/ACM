@@ -254,38 +254,43 @@ int _next(int root, int x)
         return min(key[root], _next(left[root], x));
     }
 }
+
 int next(int x)
 {
     return _next(head, x);
 }
+
 void solve()
 {
-    int n=read();
+    int n = read();
     for (int i = 1; i <= n; i++)
     {
-       int op=read(),x=read();
-       if (op == 1)
+        int op = read(), x = read();
+        if (op == 1)
         {
-           add(x);
+            add(x);
         }
         else if (op == 2)
         {
-           remove(x);
-       }
+            remove(x);
+        }
         else if (op == 3)
         {
-           cout << getRank(x) << endl;
+            cout << getRank(x) << endl;
         }
         else if (op == 4)
         {
-           cout << index(x) << endl;
-       } else if (op == 5)
+            cout << index(x) << endl;
+        }
+        else if (op == 5)
         {
-           cout << pre(x) << endl;
-       } else {
-           cout << next(x) << endl;
-       }
-   }
+            cout << pre(x) << endl;
+        }
+        else
+        {
+            cout << next(x) << endl;
+        }
+    }
 }
 
 signed main()
