@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=2e5+10;
-int ed[maxn],tree[maxn][26],fail[maxn],cnt=0,times[maxn];
+int alert[maxn],tree[maxn][26],fail[maxn],cnt=0,times[maxn];
 vector<int> mp[maxn];
 void insert(int i,string s)//插入字符串
 {
@@ -13,7 +13,7 @@ void insert(int i,string s)//插入字符串
             tree[cnr][to]=++cnt;
         cnr=tree[cnr][to];
     }
-    ed[i]=cnr;
+    alert[i]=cnr;
 }
 void setFail()// 构建失败指针 建立直通表
 {
@@ -86,7 +86,7 @@ void solve()
     dfs(0);
     for (int i=1;i<=n;i++)
     {
-        cout<<times[ed[i]]<<endl;
+        cout<<times[alert[i]]<<endl;
     }
 }
 
