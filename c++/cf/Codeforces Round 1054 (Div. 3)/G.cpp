@@ -25,28 +25,7 @@ int read()
     }
     return x * w;
 }
-struct point
-{
-    int x, y, x_num, y_num;
 
-    friend point operator+(point &a, point &b)
-    {
-        point res = {-1, -1, 0, 0};
-        if (a.x != -1)
-        {
-            res.x = a.x;
-            res.x_num = a.x_num;
-        }
-        if (a.y != -1)
-        {
-            res.y = a.y;
-            res.y_num = a.y_num;
-        }
-    }
-}
-
-point tree[4 * maxn];
-int v[maxn];
 int ls(int x)
 {
     return x << 1;
@@ -57,30 +36,166 @@ int rs(int x)
     return x << 1 | 1;
 }
 
-void push_up(int root)
+struct seg_point
 {
+    vector<pii> data;
 
-}
-
-void build(int root,int l,int r)
-{
-    if (l == r)
+    seg_point()
     {
-        tree[root].x = v[l];
-        tree[root].y = -inf;
-        tree[root].x_num = 1;
-        tree[root].y_num = 0;
-        return;
+        data.resize(2);
     }
-    int mid = (l + r) >> 1;
-    build(root<<1, l, mid);
-    build(root<<1 | 1, mid + 1, r);
+
+    explicit seg_point(int x)
+    {
+        data.resize(2);
+        data[0] = {x, 1};
+        data[1] = {inf, 0};
+    }
+};
+
+vector<pii> BM_merge(vector<pii> a, const vector<pii> &b)
+{
+    for (const auto &pb : b)
+    {
+        if (pb.second <= 0) continue;
+
+        pii p = pb;
+        bool flag = false;
+        for (int i = 0; i < 2; i++)
+        {
+            if (a[i].first == p.first)
+            {
+                a[i].second += p.second;
+                flag = true;
+                break;
+            }
+        }
+        if (flag) continue;
+        for (int i = 0; i < 2; i++)
+        {
+            if (a[i].second == 0)
+            {
+                a[i] = p;
+                flag = true;
+                break;
+            }
+        }
+        if (flag) continue;
+        int mn = p.second;
+        for (int i = 0; i < 2; i++)
+            if (a[i].second < mn) mn = a[i].second;
+        for (int i = 0; i < 2; i++)
+            a[i].second -= mn;
+        p.second -= mn;
+        for (int i = 0; i < 2; i++)
+        {
+            if (a[i].second == 0)
+            {
+                a[i] = p;
+                break;
+            }
+        }
+    }
+    return a;
 }
+
+
+struct segment_tree
+{
+    vector<seg_point> tree;
+
+    explicit segment_tree(int n)
+    {
+        tree.resize(4 * n + 5);
+    }
+
+    void push_up(int root)
+    {
+        tree[root] = merge(tree[ls(root)], tree[rs(root)]);
+    }
+
+    void built(vector<int> &v, int l, int r, int pos)
+    {
+        if (l == r)
+        {
+            tree[pos] = seg_point(v[l]);
+            return;
+        }
+        int mid = (l + r) >> 1;
+        built(v, l, mid, ls(pos));
+        built(v, mid + 1, r, rs(pos));
+        push_up(pos);
+    }
+
+    seg_point merge(const seg_point &a, const seg_point &b)
+    {
+        seg_point res;
+        res.data = BM_merge(a.data, b.data);
+        return res;
+    }
+
+    seg_point query(int L, int R, int l, int r, int pos)
+    {
+        if (L <= l && r <= R)
+        {
+            return tree[pos];
+        }
+        int mid = (l + r) >> 1;
+        seg_point res;
+        if (L <= mid)
+        {
+            res = merge(res, query(L, R, l, mid, ls(pos)));
+        }
+        if (R > mid)
+        {
+            res = merge(res, query(L, R, mid + 1, r, rs(pos)));
+        }
+        return res;
+    }
+};
+
 void solve()
 {
-    int n = read(),q=read();
-    for (int i=1;i<n;i++)
-        
+    int n = read(), q = read();
+    vector<int> v(n + 1);
+    vector<pii> where;
+    for (int i = 1; i <= n; i++)
+    {
+        v[i] = read();
+        where.push_back({v[i], i});
+    }
+    sort(where.begin(), where.end());
+    segment_tree segt(n);
+    segt.built(v, 1, n, 1);
+    while (q--)
+    {
+        int l = read(), r = read();
+        vector<int> ans;
+        seg_point res = segt.query(l, r, 1, n, 1);
+        if (res.data.empty())
+        {
+            cout << -1 << endl;
+            continue;
+        } else
+        {
+            for (const auto &p: res.data)
+            {
+                if (p.second<=0) continue;
+                if (lower_bound(where.begin(), where.end(), make_pair(p.first, r+1)) -lower_bound(where.begin(), where.end(), make_pair(p.first, l )) >( (r - l + 1) / 3))
+                    ans.push_back(p.first);
+            }
+        }
+        if (ans.empty())
+        {
+            cout << -1 << endl;
+            continue;
+        }
+        sort(ans.begin(), ans.end());
+        for (const auto &x: ans)
+            cout << x << " ";
+        cout << endl;
+    }
+
 }
 
 signed main()
@@ -93,7 +208,7 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t=read();
+    t=read();
     while (t--)
         solve();
     return 0;
@@ -234,4 +349,10 @@ signed main()
 //
 // Created by Administrator on 2025/9/27.
 //
+*/
+
+
+
+
+
 
