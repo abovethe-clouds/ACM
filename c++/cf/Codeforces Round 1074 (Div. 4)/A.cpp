@@ -8,7 +8,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+const int mod = 1e9 + 7, inf = LONG_LONG_MAX-1, P = 131;
 int read()
 {
     int x = 0, w = 1;
