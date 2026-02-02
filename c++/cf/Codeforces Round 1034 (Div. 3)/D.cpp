@@ -28,7 +28,26 @@ int read()
 
 void solve()
 {
+    int n,m;
+    cin>>n>>m;
 
+    string s;
+    cin>>s;
+    if (m*2>n)
+    {
+        cout<<"Alice"<<endl;
+        return;
+    }
+    int cnt_1=0;
+    for (int i=0;i<n;i++)
+    {
+        if (s[i]=='1')
+            cnt_1++;
+    }
+    if (cnt_1>m)
+        cout<<"Bob"<<endl;
+    else
+        cout<<"Alice"<<endl;
 }
 
 signed main()
@@ -41,8 +60,10 @@ signed main()
     //freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t = read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
-}
+}//
+// Created by Administrator on 2026/2/2.
+//

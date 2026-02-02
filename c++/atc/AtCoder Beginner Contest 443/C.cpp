@@ -28,7 +28,28 @@ int read()
 
 void solve()
 {
-
+    int n = read(), t = read();
+    if (n==0)
+    {
+        cout << t << endl;
+        return;
+    }
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) a[i] = read();
+    int sum = a[0];
+    auto it = a.begin();
+    int next_time;
+    while (it != a.end())
+    {
+        next_time = *it + 100;
+        it = upper_bound(a.begin(), a.end(), next_time);
+        if (it==a.end())
+            break;
+        sum += *it - next_time;
+    }
+    if (next_time<t)
+        sum += t - next_time;
+    cout << sum << endl;
 }
 
 signed main()
@@ -45,4 +66,6 @@ signed main()
     while (t--)
         solve();
     return 0;
-}
+} //
+// Created by Administrator on 2026/1/31.
+//

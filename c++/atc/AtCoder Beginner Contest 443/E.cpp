@@ -9,6 +9,8 @@ typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+int dx[3]={-1,-1,-1};
+int dy[3]={0,1,-1};
 int read()
 {
     int x = 0, w = 1;
@@ -28,7 +30,29 @@ int read()
 
 void solve()
 {
+    int n,c;
+    cin>>n>>c;
+    bool mp[n][n];
+    for (int i=0;i<n;i++)
+    {
+        string s;
+        cin>>s;
+        for (int j=0;j<n;j++)
+        {
+            if (s[j]=='#')
+                mp[i][j]=1;//1代表障碍物
+            else
+                mp[i][j]=0;
+        }
+    }
+    for (int i=0;i<n;i++)
+    {
+        if (!mp[n-1][i])
+        {
+            for ()
+        }
 
+    }
 }
 
 signed main()
@@ -41,8 +65,10 @@ signed main()
     //freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    //t = read();
+    cin>>t;
     while (t--)
         solve();
     return 0;
-}
+}//
+// Created by Administrator on 2026/1/31.
+//
