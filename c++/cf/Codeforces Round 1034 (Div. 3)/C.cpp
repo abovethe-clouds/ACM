@@ -26,7 +26,7 @@ int read()
     return x * w; 
 }
 
-void solve1()
+void solve()
 {
     int n;
     cin >> n;
@@ -56,7 +56,7 @@ int main()
     while(t--)
     {
         solve();
-        solve1();
+
     }
         
 
