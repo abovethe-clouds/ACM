@@ -25,23 +25,41 @@ int read()
     }
     return x * w; 
 }
-
+bool judge(int a,int b,int c)
+{
+    return a+b>c && a+c>b && b+c>a;
+}
 void solve()
 {
-    
+    int x=read();
+    for (int i=0;i<=30;i++)
+    {
+        for (int j=0;j<=30;j++)
+        {
+            int y=(1<<i)|(1<<j);
+            if (y<x&&judge(x,y,x^y))
+            {
+                cout<<y<<endl;
+                return;
+            }
+
+        }
+    }
+    cout<<-1<<endl;
 }
+
 
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    #ifndef ONLINE_JUDGE 
-        freopen("test.in", "r", stdin);
-        freopen("test.out", "w", stdout);
-    #endif
+    // #ifndef ONLINE_JUDGE
+    //     freopen("test.in", "r", stdin);
+    //     freopen("test.out", "w", stdout);
+    // #endif
     int t = 1;
-    //cin >> t;
+    t=read();
     while(t--)
         solve();
 

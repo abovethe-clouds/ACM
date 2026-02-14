@@ -28,13 +28,24 @@ int read()
 
 void solve()
 {
-    vector<int> v;
-    int x;
-    while (cin >> x)
+    int n, max_long = -1;
+    cin >> n;
+    string s[n];
+    for (int i = 0; i < n; i++)
     {
-        v.push_back(x);
+        cin >> s[i];
+        max_long = max(max_long, (int) s[i].size());
     }
-    cout<<accumulate(v.begin(), v.end(), 0)*1.0/v.size();
+    for (int i = 0; i < n; i++)
+    {
+        int num = (max_long - s[i].size()) / 2;
+        for (int j = 0; j < num; j++)
+            cout << ".";
+        cout << s[i];
+        for (int j = 0; j < num; j++)
+            cout << ".";
+        cout << endl;
+    }
 }
 
 signed main()

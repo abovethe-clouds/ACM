@@ -1,13 +1,14 @@
 {
   "configurations": [
     {
-      "compilerPath": "D:\\Program Files (x86)\\Embarcadero\\Dev-Cpp\\TDM-GCC-64\\bin\\g++.exe",
-      "cppStandard": "c++17",
+      "compilerPath": "C:/TDM-GCC-64/bin/gcc.exe",
+      "cppStandard": "${default}",
       "includePath": [
-        "${{workspaceFolder}}/**"
+        "${workspaceFolder}/**"
       ],
       "intelliSenseMode": "windows-gcc-x64",
-      "name": "Win32"
+      "name": "windows-gcc-x64",
+      "cStandard": "${default}"
     }
   ],
   "version": 4
