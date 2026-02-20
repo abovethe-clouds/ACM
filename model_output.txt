@@ -1,0 +1,13 @@
+import random
+import sys
+
+def generate():
+    # 生成随机整数，范围可以根据需要调整
+    a = random.randint(-10**9, 10**9)
+    b = random.randint(-10**9, 10**9)
+    return f"{a} {b}"
+
+if __name__ == "__main__":
+    # 生成10组样例
+    for i in range(10):
+        print(generate())
