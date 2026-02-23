@@ -1,13 +1,12 @@
-#include <limits>
 #include<bits/stdc++.h>
 using namespace std;
 #define fir first
 #define sec second
 #define endl "\n"
 typedef long long ll;
-#define int long long
+#define int ll
 typedef unsigned long long ull;
-typedef pair<int, int> pii;
+typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 int read()
@@ -29,26 +28,7 @@ int read()
 
 void solve()
 {
-    int n = read(),ansl=1,ansr=1,ans=0;
-    vector<int> a(n);
-    for (int i = 0; i < n; i++)
-        a[i] = read();
-    for (int i=0; i<n; i++)
-    {
-        int minn=0,maxx=0;
-        for (int j=i+1; j<n; j++)
-        {
-            if (a[j]>a[i]) maxx++;
-            else if (a[j]<a[i]) minn++;
-            if (minn-maxx>ans)
-            {
-                ans=minn-maxx;
-                ansl=i+1;
-                ansr=j+1;
-            }
-        }
-    }
-    cout<<ansl<<" "<<ansr<<endl;
+    
 }
 
 signed main()
@@ -57,12 +37,14 @@ signed main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    // freopen("test.in", "r", stdin);
-    // freopen("test.out", "w", stdout);
+    //freopen("test.in", "r", stdin);
+    //freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    t = read();
+    //t = read();
     while (t--)
         solve();
     return 0;
-}
+}//
+// Created by Administrator on 2026/2/20.
+//
