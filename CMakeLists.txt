@@ -20,5 +20,43 @@ foreach(src ${CPP_FILES})
             "c++/算法/前缀和，差分，离散化/Code_7_1371. 每个元音包含偶数次的最长子字符串.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/Code_1_1109. 航班预订统计.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/P4231 三步必杀.cpp"
-            "c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp")
+            "c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp"
+            "c++/cf/Codeforces Round 995 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 995 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 995 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/D.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/D.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1083 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1083 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/C.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/C.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/D.cpp"
+            "c++/计算几何/Projection .cpp"
+            c++/计算几何/Reflection.cpp
+            c++/计算几何/Counter-Clockwise.cpp
+            c++/计算几何/Orthogonal.cpp
+            c++/计算几何/Intersection.cpp
+            PTA/1.cpp
+            "c++/cf/Codeforces Round 1087 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1087 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1090 (Div. 4)/A.cpp"
+            "c++/cf/Codeforces Round 1090 (Div. 4)/B.cpp"
+            "c++/数据结构/二叉树/P8796 [蓝桥杯 2022 国 AC] 替换字符.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/A.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/B.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/C.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/D.cpp"
+            "c++/cf/Codeforces Round 1092 (Unrated, Div. 2, Based on THUPC 2026 — Finals)/A.cpp"
+            B.cpp
+    )
 endforeach()

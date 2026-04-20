@@ -26,7 +26,29 @@ int read()
     return x * w;
 }
 
-vector<int> prime;
+vector<int>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+prime;
 
 void prime_1e7()
 {

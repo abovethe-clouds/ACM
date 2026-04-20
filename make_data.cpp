@@ -14,16 +14,16 @@ int read()
     int x = 0, w = 1;
     char ch = 0;
     while (ch < '0' || ch > '9')
-    {  
-        if (ch == '-') w = -1;        
-        ch = getchar();               
+    {
+        if (ch == '-') w = -1;
+        ch = getchar();
     }
     while (ch >= '0' && ch <= '9')
-    {  
+    {
         x = x * 10 + (ch - '0');
-        ch = getchar();  
+        ch = getchar();
     }
-    return x * w; 
+    return x * w;
 }
 
 string ss()
@@ -64,14 +64,14 @@ void solve()
     {
         cout << left << setw(13) << ss();
     }
-    
+
 }
 int main()
 {
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
     cout.tie(nullptr);
-    #ifndef ONLINE_JUDGE 
+    #ifndef ONLINE_JUDGE
         freopen("test.in", "r", stdin);
        freopen("test.out", "w", stdout);
     #endif
