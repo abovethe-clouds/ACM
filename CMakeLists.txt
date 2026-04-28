@@ -58,5 +58,10 @@ foreach(src ${CPP_FILES})
             "c++/蓝桥/蓝桥杯 2022 省赛 C/D.cpp"
             "c++/cf/Codeforces Round 1092 (Unrated, Div. 2, Based on THUPC 2026 — Finals)/A.cpp"
             B.cpp
+            "c++/cf/Codeforces Round 1093 (Div. 2)/A.cpp"
+            c++/比赛冲的/JNCPC/F.cpp
+            c++/比赛冲的/JNCPC/J.cpp
+            c++/比赛冲的/JNCPC/G.cpp
+            c++/比赛冲的/JNCPC/A.cpp
     )
 endforeach()

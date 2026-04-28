@@ -12,35 +12,30 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int n,m;
-    cin>>n>>m;
-    vector<int> x(n);
-    vector<pii> y(m);
+    int n;
+    cin>>n;
+    vector<int> a(n);
     for(int i=0;i<n;i++)
-        cin>>x[i];
-    for(int i=0;i<m;i++)
-        cin>>y[i].first>>y[i].second;
-    sort(y.begin(),y.end());
-    int ans=0,j=n-1;
-    multiset<int>st;
-    for(int i=m-1;i>=0;i--)
+        cin>>a[i];
+    sort(a.begin(),a.end(),greater<int>());
+    if (n==1)
     {
-        int t=y[i].first,z=y[i].second;
-        while (j>=0&&j+1>=t)
+        cout<<a[0]<<endl;
+        return;
+    }
+    for (int i=0;i<n-1;i++)
+    {
+        if (a[i]==a[i+1])
         {
-            st.insert(x[j]);
-            j--;
-        }
-        auto it=st.upper_bound(z);
-        if(it!=st.begin())
-        {
-            --it;
-            ans+=*it;
-            st.erase(it);
+            cout<<-1<<endl;
+            return;
         }
     }
-    cout<<ans<<endl;
-
+    for (auto i:a)
+    {
+        cout<<i<<" ";
+    }
+    cout<<endl;
 }
 
 signed main()
@@ -59,5 +54,5 @@ signed main()
     return 0;
 }
 //
-// Created by Administrator on 2026/4/26.
+// Created by Administrator on 2026/4/21.
 //
