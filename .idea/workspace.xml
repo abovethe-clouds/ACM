@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/UserInterface/HierarchyView/ViewStyle/@EntryValue" value="SuperTypes" type="string" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="RiderCppLiveTemplatesSettings" type="string" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="refactor: clean up code and add new Minesweeper game implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ACM.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/ACM2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1093 (Div. 2)/A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/F.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/G.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/J.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/bridge.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld.exe" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.exe" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_D:/code/ACM" value="32SzKGPaVxAyxz4qUR6OcK4pCyL" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="CopilotUserSelectedModel">
+    <selectedModels>
+      <entry key="chat-panel" value="Gemini 3 Pro (Preview)" />
+      <entry key="agent-panel" value="Gemini 3 Pro (Preview)" />
+    </selectedModels>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {}
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:abovethe-clouds/ACM.git&quot;,
+    &quot;accountId&quot;: &quot;187302d7-51f2-4d7e-8fd5-f54c9440ef82&quot;
+  }
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="32SzKGPaVxAyxz4qUR6OcK4pCyL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;C/C++ 文件.1.cpp.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ 文件.A.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.A.cpp (2).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.A.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.B.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.B.cpp (2).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.B.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.C .cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.C.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.C.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.Counter-Clockwise.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.D.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.D.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.D_help.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.E.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.E.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.F.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.G.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.Intersection.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.J.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.Orthogonal.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P1278 单词游戏.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P1996 约瑟夫问题.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P2014 [CTSC1997] 选课.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P3369 【模板】普通平衡树.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P3605 [USACO17JAN] Promotion Counting P.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P4391 [BalticOI 2009] Radio Transmission 无线传输.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.Projection .cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.Reflection.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.[CACC2024区域赛] 区间奇偶数操作.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.aaa.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.duipai.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.helloworld.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.kmp.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.out.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.text_time.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.对拍.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Atest.executor&quot;: &quot;Run&quot;,
+    &quot;Python.bridge.executor&quot;: &quot;Run&quot;,
+    &quot;Python.checker (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.造数据.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/code/ACM&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\code\ACM" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.bridge">
+    <configuration name="A.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="A.cpp" CONFIG_NAME="A.cpp">
+      <option name="sourceFile" value="c++\比赛冲的\JNCPC\A.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="J.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="J.cpp" CONFIG_NAME="J.cpp">
+      <option name="sourceFile" value="c++\比赛冲的\JNCPC\J.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="bridge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ACM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c++/比赛冲的/JNCPC/bridge.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checker (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ACM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/c++/比赛冲的/JNCPC/checker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ACM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\code\ACM\c++\比赛冲的\JNCPC\checker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="C/C++ 文件.A.cpp" />
+      <item itemvalue="C/C++ 文件.J.cpp" />
+      <item itemvalue="Python.bridge" />
+      <item itemvalue="Python.checker (1)" />
+      <item itemvalue="Python.checker" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.bridge" />
+        <item itemvalue="Python.checker (1)" />
+        <item itemvalue="Python.checker" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-PY-252.28238.29" />
+        <option value="bundled-python-sdk-a101402ee41c-968fe969f28a-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.28238.29" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="" />
+      <created>1757428697346</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1757428697346</updated>
+      <workItem from="1757428699655" duration="2548000" />
+      <workItem from="1757470844556" duration="4000" />
+      <workItem from="1757722533991" duration="761000" />
+      <workItem from="1757723313661" duration="3000" />
+      <workItem from="1757723688627" duration="74000" />
+      <workItem from="1757723771041" duration="5481000" />
+      <workItem from="1757751515038" duration="2000" />
+      <workItem from="1757780491367" duration="334000" />
+      <workItem from="1757980363199" duration="4317000" />
+      <workItem from="1758034543486" duration="1683000" />
+      <workItem from="1758183153980" duration="5115000" />
+      <workItem from="1758198538077" duration="96000" />
+      <workItem from="1758206514394" duration="1940000" />
+      <workItem from="1758210309966" duration="578000" />
+      <workItem from="1758684922304" duration="3482000" />
+      <workItem from="1758790925259" duration="2744000" />
+      <workItem from="1758934127597" duration="6265000" />
+      <workItem from="1759288296808" duration="2080000" />
+      <workItem from="1759293448119" duration="1000" />
+      <workItem from="1759293460085" duration="309000" />
+      <workItem from="1759405980761" duration="4811000" />
+      <workItem from="1759415794321" duration="74000" />
+      <workItem from="1759467044661" duration="132000" />
+      <workItem from="1759492671825" duration="4358000" />
+      <workItem from="1759501154615" duration="595000" />
+      <workItem from="1759509413185" duration="41000" />
+      <workItem from="1759579304047" duration="4772000" />
+      <workItem from="1759665624980" duration="4408000" />
+      <workItem from="1760016934959" duration="86000" />
+      <workItem from="1760096110109" duration="1000" />
+      <workItem from="1760601673744" duration="4009000" />
+      <workItem from="1760747882259" duration="5949000" />
+      <workItem from="1760757586433" duration="2045000" />
+      <workItem from="1761218146988" duration="2471000" />
+      <workItem from="1761369759841" duration="178000" />
+      <workItem from="1761371419741" duration="1267000" />
+      <workItem from="1761814864705" duration="3085000" />
+      <workItem from="1761907650742" duration="585000" />
+      <workItem from="1761957567765" duration="4958000" />
+      <workItem from="1761964698898" duration="2743000" />
+      <workItem from="1761988403267" duration="994000" />
+      <workItem from="1762045832353" duration="682000" />
+      <workItem from="1762079841866" duration="5000" />
+      <workItem from="1762080176368" duration="3000" />
+      <workItem from="1762080283587" duration="4922000" />
+      <workItem from="1762176617758" duration="4000" />
+      <workItem from="1762562500387" duration="7817000" />
+      <workItem from="1762581956626" duration="8000" />
+      <workItem from="1762591129175" duration="1201000" />
+      <workItem from="1762592375823" duration="64000" />
+      <workItem from="1762592567043" duration="300000" />
+      <workItem from="1762593088819" duration="51000" />
+      <workItem from="1762609614023" duration="692000" />
+      <workItem from="1762612028189" duration="480000" />
+      <workItem from="1762617507932" duration="237000" />
+      <workItem from="1762621820334" duration="191000" />
+      <workItem from="1762670345969" duration="467000" />
+      <workItem from="1762698384357" duration="581000" />
+      <workItem from="1763020680036" duration="92000" />
+      <workItem from="1763041572189" duration="231000" />
+      <workItem from="1763047175671" duration="702000" />
+      <workItem from="1763395512425" duration="799000" />
+      <workItem from="1763476386642" duration="4667000" />
+      <workItem from="1763606811716" duration="507000" />
+      <workItem from="1763614440436" duration="695000" />
+      <workItem from="1763625131088" duration="3517000" />
+      <workItem from="1763792246193" duration="1603000" />
+      <workItem from="1763795359320" duration="702000" />
+      <workItem from="1763796637161" duration="2023000" />
+      <workItem from="1763820964294" duration="886000" />
+      <workItem from="1763822251475" duration="30000" />
+      <workItem from="1763879779414" duration="1933000" />
+      <workItem from="1763907183393" duration="2062000" />
+      <workItem from="1763948487444" duration="2949000" />
+      <workItem from="1763952535787" duration="3440000" />
+      <workItem from="1763959699482" duration="240000" />
+      <workItem from="1763960639448" duration="260000" />
+      <workItem from="1764165156612" duration="1760000" />
+      <workItem from="1764167221094" duration="8000" />
+      <workItem from="1764229951531" duration="765000" />
+      <workItem from="1764241647557" duration="635000" />
+      <workItem from="1764304577358" duration="182000" />
+      <workItem from="1764381263460" duration="2405000" />
+      <workItem from="1764402529704" duration="1517000" />
+      <workItem from="1764404127093" duration="216000" />
+      <workItem from="1764404403887" duration="1704000" />
+      <workItem from="1764406144058" duration="1349000" />
+      <workItem from="1764409425805" duration="246000" />
+      <workItem from="1764483337910" duration="331000" />
+      <workItem from="1764483710547" duration="1205000" />
+      <workItem from="1764816655135" duration="171000" />
+      <workItem from="1764816842241" duration="2502000" />
+      <workItem from="1765550457728" duration="396000" />
+      <workItem from="1765961393062" duration="2970000" />
+      <workItem from="1765968689699" duration="33000" />
+      <workItem from="1766029406968" duration="39000" />
+      <workItem from="1766029533511" duration="148000" />
+      <workItem from="1766071661814" duration="7000" />
+      <workItem from="1766071779907" duration="1031000" />
+      <workItem from="1766122946064" duration="3813000" />
+      <workItem from="1766140021988" duration="3000" />
+      <workItem from="1766140035698" duration="40000" />
+      <workItem from="1766146803432" duration="95000" />
+      <workItem from="1766189254418" duration="87000" />
+      <workItem from="1771088673163" duration="821000" />
+      <workItem from="1771916282911" duration="457000" />
+      <workItem from="1771929693510" duration="4901000" />
+      <workItem from="1771942393270" duration="1123000" />
+      <workItem from="1771992826664" duration="298000" />
+      <workItem from="1771993462045" duration="55000" />
+      <workItem from="1771993562831" duration="1062000" />
+      <workItem from="1771994660838" duration="3000" />
+      <workItem from="1771996652232" duration="3000" />
+      <workItem from="1771999330808" duration="10000" />
+      <workItem from="1772007800355" duration="46000" />
+      <workItem from="1772009041200" duration="72000" />
+      <workItem from="1772014174730" duration="397000" />
+      <workItem from="1772022050319" duration="25000" />
+      <workItem from="1772024331538" duration="2444000" />
+      <workItem from="1772103873276" duration="2478000" />
+      <workItem from="1772108748547" duration="243000" />
+      <workItem from="1772109837524" duration="337000" />
+      <workItem from="1772110378420" duration="2625000" />
+      <workItem from="1772116787729" duration="1986000" />
+      <workItem from="1772590212747" duration="3064000" />
+      <workItem from="1772887926181" duration="58000" />
+      <workItem from="1773303046641" duration="176000" />
+      <workItem from="1773306220867" duration="2020000" />
+      <workItem from="1773308892536" duration="394000" />
+      <workItem from="1773488502750" duration="5844000" />
+      <workItem from="1773570090053" duration="947000" />
+      <workItem from="1773918417634" duration="16000" />
+      <workItem from="1773918535699" duration="5235000" />
+      <workItem from="1773998163759" duration="2410000" />
+      <workItem from="1774269465262" duration="426000" />
+      <workItem from="1774527390469" duration="1612000" />
+      <workItem from="1774605467130" duration="460000" />
+      <workItem from="1774683563840" duration="2639000" />
+      <workItem from="1774686251506" duration="6292000" />
+      <workItem from="1774788568727" duration="1853000" />
+      <workItem from="1775127957360" duration="620000" />
+      <workItem from="1775128607671" duration="5142000" />
+      <workItem from="1775217807960" duration="1787000" />
+      <workItem from="1775302083637" duration="2716000" />
+      <workItem from="1775305543375" duration="4972000" />
+      <workItem from="1775314453595" duration="504000" />
+      <workItem from="1775353037588" duration="2845000" />
+      <workItem from="1775363216346" duration="659000" />
+      <workItem from="1775547825687" duration="4496000" />
+      <workItem from="1775559748800" duration="3416000" />
+      <workItem from="1776152579626" duration="2753000" />
+      <workItem from="1776163405381" duration="4329000" />
+      <workItem from="1776326240489" duration="8000" />
+      <workItem from="1776327241212" duration="34000" />
+      <workItem from="1776328308761" duration="346000" />
+      <workItem from="1776329792864" duration="3570000" />
+      <workItem from="1776696977464" duration="25000" />
+      <workItem from="1776760240322" duration="2654000" />
+      <workItem from="1776767225445" duration="2577000" />
+      <workItem from="1776932970823" duration="2950000" />
+      <workItem from="1776993004266" duration="11000" />
+      <workItem from="1776993561908" duration="28000" />
+      <workItem from="1776994772761" duration="11000" />
+      <workItem from="1776994805895" duration="4825000" />
+      <workItem from="1776999654766" duration="1953000" />
+      <workItem from="1777001752277" duration="110000" />
+    </task>
+    <task id="LOCAL-00001" summary="sel">
+      <option name="closed" value="true" />
+      <created>1757431497182</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1757431497182</updated>
+    </task>
+    <task id="LOCAL-00002" summary="sel">
+      <option name="closed" value="true" />
+      <created>1757726324272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1757726324272</updated>
+    </task>
+    <task id="LOCAL-00003" summary="sel">
+      <option name="closed" value="true" />
+      <created>1757731105100</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1757731105100</updated>
+    </task>
+    <task id="LOCAL-00004" summary="sel">
+      <option name="closed" value="true" />
+      <created>1758792073387</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1758792073387</updated>
+    </task>
+    <task id="LOCAL-00005" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759288585707</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1759288585707</updated>
+    </task>
+    <task id="LOCAL-00006" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759406046034</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1759406046034</updated>
+    </task>
+    <task id="LOCAL-00007" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759406090882</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1759406090882</updated>
+    </task>
+    <task id="LOCAL-00008" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759406210704</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1759406210704</updated>
+    </task>
+    <task id="LOCAL-00009" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759406714789</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1759406714789</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759407039828</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1759407039828</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759407146844</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1759407146844</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759407924023</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1759407924023</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759408367171</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1759408367171</updated>
+    </task>
+    <task id="LOCAL-00014" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759414748215</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759414748215</updated>
+    </task>
+    <task id="LOCAL-00015" summary="sel">
+      <option name="closed" value="true" />
+      <created>1759492788477</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1759492788477</updated>
+    </task>
+    <task id="LOCAL-00016" summary="sel">
+      <option name="closed" value="true" />
+      <created>1762617737100</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1762617737100</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sel">
+      <option name="closed" value="true" />
+      <created>1766140063901</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1766140063901</updated>
+    </task>
+    <task id="LOCAL-00018" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1771088956152</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1771088956152</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1771090010703</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1771090010703</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1772014260399</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1772014260399</updated>
+    </task>
+    <task id="LOCAL-00021" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1772590285110</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1772590285111</updated>
+    </task>
+    <task id="LOCAL-00022" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1772593404363</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1772593404363</updated>
+    </task>
+    <task id="LOCAL-00023" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1772593411052</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1772593411052</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor: clean up code and add new Minesweeper game implementation">
+      <option name="closed" value="true" />
+      <created>1776696992027</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1776696992027</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="sel" />
+    <MESSAGE value="refactor: clean up code and add new Minesweeper game implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: clean up code and add new Minesweeper game implementation" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Atest_py$Atest.coverage" NAME="Atest 覆盖结果" MODIFIED="1776994808271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+    <SUITE FILE_PATH="coverage/Atest_py$bridge.coverage" NAME="bridge 覆盖结果" MODIFIED="1776999210406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+    <SUITE FILE_PATH="coverage/Atest_py$checker__1_.coverage" NAME="checker (1) 覆盖结果" MODIFIED="1776998319633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
