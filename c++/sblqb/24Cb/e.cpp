@@ -12,35 +12,37 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int n,m;
-    cin>>n>>m;
-    vector<int> x(n);
-    vector<pii> y(m);
-    for(int i=0;i<n;i++)
-        cin>>x[i];
-    for(int i=0;i<m;i++)
-        cin>>y[i].first>>y[i].second;
-    sort(y.begin(),y.end());
-    int ans=0,j=n-1;
-    multiset<int>st;
-    for(int i=m-1;i>=0;i--)
+    int a,b;
+    string s,add;
+    cin>>a>>b>>s>>add;
+    sort(add.begin(), add.end());
+    reverse(add.begin(), add.end());
+    reverse(s.begin(), s.end());
+    string ans;
+    while ((!add.empty())&&(!s.empty()))
     {
-        int t=y[i].first,z=y[i].second;
-        while (j>=0&&j+1>=t)
+        if (add.back()>=s.back())
         {
-            st.insert(x[j]);
-            j--;
+            ans.push_back(s.back());
+            s.pop_back();
         }
-        auto it=st.upper_bound(z);
-        if(it!=st.begin())
+        else
         {
-            --it;
-            ans+=*it;
-            st.erase(it);
+            ans.push_back(add.back());
+            add.pop_back();
         }
     }
+    while (!s.empty())
+    {
+        ans.push_back(s.back());
+        s.pop_back();
+    }
+    while (!add.empty())
+    {
+        ans.push_back(add.back());
+        add.pop_back();
+    }
     cout<<ans<<endl;
-
 }
 
 signed main()
@@ -53,11 +55,10 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
-    cin>>t;
     while (t--)
         solve();
     return 0;
 }
 //
-// Created by Administrator on 2026/4/26.
+// Created by Administrator on 2026/5/1.
 //

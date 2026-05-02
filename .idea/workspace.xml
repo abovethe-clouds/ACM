@@ -29,22 +29,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="refactor: clean up code and add new Minesweeper game implementation">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ACM.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ACM2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1093 (Div. 2)/A.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/A.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/F.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/G.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/J.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/bridge.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/比赛冲的/JNCPC/checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld.exe" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/SCCPC/B.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c++/XCPC/SCCPC/E.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c++/XCPC/SCCPC/E.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c++/XCPC/马蹄2/MC0565 豫让伏桥修暗器.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c++/XCPC/马蹄2/MC0565 豫让伏桥修暗器.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,8 +484,6 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="C/C++ 文件.A.cpp" />
-      <item itemvalue="C/C++ 文件.J.cpp" />
       <item itemvalue="Python.bridge" />
       <item itemvalue="Python.checker (1)" />
       <item itemvalue="Python.checker" />
@@ -691,6 +677,8 @@
       <workItem from="1776994805895" duration="4825000" />
       <workItem from="1776999654766" duration="1953000" />
       <workItem from="1777001752277" duration="110000" />
+      <workItem from="1777513832470" duration="51000" />
+      <workItem from="1777513898462" duration="104000" />
     </task>
     <task id="LOCAL-00001" summary="sel">
       <option name="closed" value="true" />

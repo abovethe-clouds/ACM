@@ -14,32 +14,20 @@ void solve()
 {
     int n,m;
     cin>>n>>m;
-    vector<int> x(n);
-    vector<pii> y(m);
-    for(int i=0;i<n;i++)
-        cin>>x[i];
+    map<int,int> people;
     for(int i=0;i<m;i++)
-        cin>>y[i].first>>y[i].second;
-    sort(y.begin(),y.end());
-    int ans=0,j=n-1;
-    multiset<int>st;
-    for(int i=m-1;i>=0;i--)
     {
-        int t=y[i].first,z=y[i].second;
-        while (j>=0&&j+1>=t)
-        {
-            st.insert(x[j]);
-            j--;
-        }
-        auto it=st.upper_bound(z);
-        if(it!=st.begin())
-        {
-            --it;
-            ans+=*it;
-            st.erase(it);
-        }
+        int x,y;
+        cin>>x>>y;
+        people[x]+=y;
     }
-    cout<<ans<<endl;
+    vector<int> a;
+    for (auto [x,y]:people)
+        a.emplace_back(y);
+    sort(a.begin(),a.end());
+
+
+
 
 }
 
@@ -59,5 +47,5 @@ signed main()
     return 0;
 }
 //
-// Created by Administrator on 2026/4/26.
+// Created by Administrator on 2026/4/30.
 //
