@@ -12,13 +12,7 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int sum=0,a;
-    while (cin>>a)
-    {
-        if (a==-1) break;
-        sum+=a;
-    }
-    cout<<sum<<endl;
+
 }
 
 signed main()
@@ -35,3 +29,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/5/21.
+//

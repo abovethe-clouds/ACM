@@ -29,10 +29,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="refactor: clean up code and add new Minesweeper game implementation">
-      <change afterPath="$PROJECT_DIR$/c++/XCPC/SCCPC/B.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2020HBCPC/A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2020HBCPC/G.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2020HBCPC/J.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/sblqb/24cc/D.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/sblqb/24cc/E.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/sblqb/24cc/F.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/sblqb/24cc/G.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/sblqb/24cc/h.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c++/XCPC/SCCPC/E.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c++/XCPC/SCCPC/E.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/c++/XCPC/马蹄2/MC0565 豫让伏桥修暗器.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c++/XCPC/马蹄2/MC0565 豫让伏桥修暗器.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/c++/sblqb/24cc/C.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/c++/sblqb/24cc/C.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld.exe" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/make_data.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/make_data.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.out" beforeDir="false" afterPath="$PROJECT_DIR$/test.out" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -371,6 +383,7 @@
     &quot;C/C++ 文件.text_time.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.对拍.cpp.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.11.executor&quot;: &quot;Run&quot;,
     &quot;Python.Atest.executor&quot;: &quot;Run&quot;,
     &quot;Python.bridge.executor&quot;: &quot;Run&quot;,
     &quot;Python.checker (1).executor&quot;: &quot;Run&quot;,
@@ -401,18 +414,35 @@
       <recent name="D:\code\ACM" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.bridge">
-    <configuration name="A.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="A.cpp" CONFIG_NAME="A.cpp">
-      <option name="sourceFile" value="c++\比赛冲的\JNCPC\A.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Python.11">
     <configuration name="J.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="J.cpp" CONFIG_NAME="J.cpp">
       <option name="sourceFile" value="c++\比赛冲的\JNCPC\J.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="11" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ACM" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/11.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="bridge" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ACM" />
@@ -484,12 +514,14 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.11" />
       <item itemvalue="Python.bridge" />
       <item itemvalue="Python.checker (1)" />
       <item itemvalue="Python.checker" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.11" />
         <item itemvalue="Python.bridge" />
         <item itemvalue="Python.checker (1)" />
         <item itemvalue="Python.checker" />
@@ -679,6 +711,8 @@
       <workItem from="1777001752277" duration="110000" />
       <workItem from="1777513832470" duration="51000" />
       <workItem from="1777513898462" duration="104000" />
+      <workItem from="1777949186101" duration="363000" />
+      <workItem from="1778158099265" duration="66000" />
     </task>
     <task id="LOCAL-00001" summary="sel">
       <option name="closed" value="true" />
@@ -918,6 +952,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Atest_py$Atest.coverage" NAME="Atest 覆盖结果" MODIFIED="1776994808271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
     <SUITE FILE_PATH="coverage/Atest_py$bridge.coverage" NAME="bridge 覆盖结果" MODIFIED="1776999210406" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
+    <SUITE FILE_PATH="coverage/11_py$11.coverage" NAME="11 覆盖结果" MODIFIED="1778158113372" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Atest_py$checker__1_.coverage" NAME="checker (1) 覆盖结果" MODIFIED="1776998319633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/c++/比赛冲的/JNCPC" />
   </component>
   <component name="github-copilot-workspace">

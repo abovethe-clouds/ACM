@@ -12,13 +12,28 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int sum=0,a;
-    while (cin>>a)
+    int n,m;
+    cin>>n>>m;
+    map<string,string> mp;
+    for(int i=0;i<n;i++)
     {
-        if (a==-1) break;
-        sum+=a;
+        string s1,s2;
+        cin>>s1>>s2;
+        mp[s1]=s2;
     }
-    cout<<sum<<endl;
+    for(int i=0;i<m;i++)
+    {
+        string s;
+        cin>>s;
+        if (mp.count(s))
+        {
+            cout<<mp[s]<<endl;
+        }
+        else
+        {
+            cout<<"NULL"<<endl;
+        }
+    }
 }
 
 signed main()
@@ -35,3 +50,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/5/17.
+//

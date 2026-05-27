@@ -12,13 +12,22 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int sum=0,a;
-    while (cin>>a)
+    string s;
+    cin >> s;
+    bool ch[26] = {};
+    for (int i = 0; i < s.length(); i++)
     {
-        if (a==-1) break;
-        sum+=a;
+        if (s[i]!='i')ch[s[i] - 'a'] = true;
     }
-    cout<<sum<<endl;
+    int ans = 0;
+    for (int i = 0; i < 26; i++)
+    {
+        if (ch[i])
+        {
+            ans++;
+        }
+    }
+    cout << ans;
 }
 
 signed main()
@@ -35,3 +44,7 @@ signed main()
         solve();
     return 0;
 }
+
+//
+// Created by Administrator on 2026/5/21.
+//

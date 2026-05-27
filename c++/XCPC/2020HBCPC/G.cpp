@@ -12,13 +12,29 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int sum=0,a;
-    while (cin>>a)
+    int n,l,r;
+    cin>>n>>l>>r;
+    vector<int> a(n+2),dp(n+2,0),sum(n+2,0);
+    for(int i=1;i<=n;i++)
     {
-        if (a==-1) break;
-        sum+=a;
+        cin>>a[i];
     }
-    cout<<sum<<endl;
+    for(int i=1;i<=n;i++)
+    {
+        sum[i]=sum[i-1]+a[i];
+    }
+    for(int i=1;i<=n;i++)
+    {
+        dp[i]=dp[i-1];
+        for(int j=1;j<=i;j++)
+        {
+            if (sum[i]-sum[j-1]<=r&&sum[i]-sum[j-1]>=l)
+            {
+                dp[i]=max(dp[i],dp[j-1]+1);
+            }
+        }
+    }
+    cout<<dp[n]<<endl;
 }
 
 signed main()
@@ -31,7 +47,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
+    cin>>t;
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/5/7.
+//

@@ -12,13 +12,29 @@ const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 
 void solve()
 {
-    int sum=0,a;
-    while (cin>>a)
+    int n;
+    cin>>n;
+    vector<pii> v(n);
+    for(int i=0;i<n;i++)
+        cin>>v[i].first>>v[i].second;
+    sort(v.begin(), v.end(), [](pii a, pii b)
     {
-        if (a==-1) break;
-        sum+=a;
+        if (a.second == b.second)
+        {
+            return a.second < b.second;
+        }
+        return a.first < b.first;
+    });
+    queue<pii> q;
+    int cur=0;
+    int i=0;
+    for (;i<n;i++)
+    {
+        while (v[i].first<=cur)
+        {
+            q.push(v[i]);
+        }
     }
-    cout<<sum<<endl;
 }
 
 signed main()
@@ -35,3 +51,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/5/21.
+//
