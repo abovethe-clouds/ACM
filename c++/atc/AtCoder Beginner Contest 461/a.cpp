@@ -1,3 +1,6 @@
+#ifndef ONLINE_JUDGE
+#include <D:/code/debug.h>
+#endif
 #include<bits/stdc++.h>
 using namespace std;
 #define fir first
@@ -11,22 +14,16 @@ typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
 void solve()
 {
-    int n,k;
-    cin>>n>>k;
-    vector<int> a(n),pre(n);
-    for(int i=0;i<n;i++)
-        cin>>a[i];
-    vector<vector<int>> dp(n+1,vector<int>(k+1,inf));
-    pre[0]=a[0];
-    for(int i=1;i<n;i++)
+    int a,b;
+    cin>>a>>b;
+    if (a<=b)
     {
-        pre[i]=pre[i-1]+a[i];
+        cout<<"Yes"<<endl;
     }
-    st_table st(a);
-
-
-
-
+    else
+    {
+        cout<<"No"<<endl;
+    }
 }
 
 signed main()
@@ -43,3 +40,4 @@ signed main()
         solve();
     return 0;
 }
+

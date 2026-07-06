@@ -9,22 +9,18 @@ typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+map<int,int> mp;
 void solve()
 {
-    int n,k;
-    cin>>n>>k;
-    vector<int> a(n),pre(n);
-    for(int i=0;i<n;i++)
-        cin>>a[i];
-    vector<vector<int>> dp(n+1,vector<int>(k+1,inf));
-    pre[0]=a[0];
-    for(int i=1;i<n;i++)
+    int n;
+    cin >> n;
+    vector<int> a[n];
+    for (int i = 0; i < n; i++)
     {
-        pre[i]=pre[i-1]+a[i];
+        int c;
+        cin >> c;
+        a[i].push_back(c);
     }
-    st_table st(a);
-
-
 
 
 }
@@ -43,3 +39,6 @@ signed main()
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/5/27.
+//

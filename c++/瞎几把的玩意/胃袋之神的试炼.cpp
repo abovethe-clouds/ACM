@@ -7,7 +7,7 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=2e5+10;
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=1e6+10;
 #define int ll
 struct  point
 {
@@ -45,60 +45,53 @@ void lazy_down(int root ,int l,int r,int add)
 }
 void push_down(int root,int l,int r)
 {
-    if(l==r) return;
-    if(tree[root].lazy==0)
-    {
-        return;
-    }
+    if (tree[root].lazy == 0) return;
+    if (l == r) return;
     int add=tree[root].lazy;
     int mid=(l+r)/2;
     lazy_down(ls(root),l,mid,add);
     lazy_down(rs(root),mid+1,r,add);
-
-    tree[root].lazy=0;
+    tree[root].lazy = 0;
+    return;
 }
-void add(int root,int L,int R,int l,int r,int ad)
+void add(int root,int l,int r,int l_r,int r_r,int ad)
 {
-    if(L<=l && r<=R)
+    if(l==l_r&&r==r_r)
     {
-        tree[root].sum+=(r-l+1)*ad;
-        tree[root].maxx+=ad;
+        tree[root].sum=tree[root].sum+(r-l+1)*ad;
         tree[root].lazy+=ad;
+        tree[root].maxx+=ad;
         return;
     }
-    push_down(root,l,r);
-    int mid=(l+r)/2;
-    if(L<=mid)
+    push_down(root,l_r,r_r);
+    int mid=(l_r+r_r)/2;
+    if(r<=mid)
+        add(ls(root),l,r,l_r,mid,ad);
+    else if(l>mid)
+        add(rs(root),l,r,mid+1,r_r,ad);
+    else
     {
-        add(ls(root),L,R,l,mid,ad);
+        add(ls(root),l,mid,l_r,mid,ad);
+        add(rs(root),mid+1,r,mid+1,r_r,ad);
     }
-
-    if(R>mid)
-    {
-        add(rs(root),L,R,mid+1,r,ad);
-    }
-
     push_up(root);
 }
-point find(int root,int L,int R,int l,int r)
+point find(int root,int l,int r,int l_r,int r_r)
 {
-    if(L<=l && r<=R)
+    if(l==l_r&&r==r_r)
     {
         return tree[root];
     }
-    push_down(root,l,r);
-    int mid=(l+r)/2;
-    if(R<=mid)
+    push_down(root,l_r,r_r);
+    int mid=(l_r+r_r)/2;
+    if(r<=mid)
+        return find(ls(root),l,r,l_r,mid);
+    else if(l>mid)
+        return find(rs(root),l,r,mid+1,r_r);
+    else
     {
-        return find(ls(root),L,R,l,mid);
+        return find(ls(root),l,mid,l_r,mid)+find(rs(root),mid+1,r,mid+1,r_r);
     }
-    if(L>mid)
-    {
-        return find(rs(root),L,R,mid+1,r);
-    }
-
-    return find(ls(root),L,R,l,mid)
-         + find(rs(root),L,R,mid+1,r);
 }
 void built(int root,int l,int r)
 {
@@ -117,25 +110,34 @@ void built(int root,int l,int r)
 }
 void solve()
 {
-    int n,m,s;
-    cin>>n>>m>>s;
+    int n,m;
+    cin>>n>>m;
     for (int i = 1; i < n+1; i++)
     {
-        v[i]=0;
+        cin>>v[i];
     }
     built(1,1,n);
-    int ans=0;
     while(m--)
     {
+        string s;
         int l,r;
-        cin>>l>>r;
-        if (find(1,l,r-1,1,n).maxx<s)
+        cin>>s>>l>>r;
+        if (s=="CHECK")
         {
-            add(1,l,r-1,1,n,1);
-            ans++;
+            cout<<((find(1,l,r,1,n).maxx>=440)?"YES":"NO")<<endl;
+        }
+        else
+        {
+            int x=find(1,l,r,1,n).sum;
+            x/=(r-l+1);
+            if (x>=360)
+                add(1,l,r,1,n,10);
+            else if (x>=100)
+                add(1,l,r,1,n,15);
+            else
+                add(1,l,r,1,n,20);
         }
     }
-    cout<<ans<<endl;
 
 }
 signed main()

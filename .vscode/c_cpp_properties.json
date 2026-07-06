@@ -1,14 +1,13 @@
 {
   "configurations": [
     {
-      "compilerPath": "C:/TDM-GCC-64/bin/gcc.exe",
-      "cppStandard": "${default}",
+      "compilerPath": "E:\\Program Files\\JetBrains\\CLion 2025.2.4\\bin\\mingw\\bin\\g++.exe",
+      "cppStandard": "c++23",
       "includePath": [
-        "${workspaceFolder}/**"
+        "${{workspaceFolder}}/**"
       ],
       "intelliSenseMode": "windows-gcc-x64",
-      "name": "windows-gcc-x64",
-      "cStandard": "${default}"
+      "name": "Win32"
     }
   ],
   "version": 4

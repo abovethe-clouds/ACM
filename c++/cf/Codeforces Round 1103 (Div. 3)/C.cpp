@@ -8,25 +8,24 @@ typedef long long ll;
 typedef unsigned long long ull;
 typedef pair<int, int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
+const int mod = 1e9 + 7, inf = 0x66ccff66, P = 131;
+
 void solve()
 {
-    int n,k;
-    cin>>n>>k;
-    vector<int> a(n),pre(n);
-    for(int i=0;i<n;i++)
-        cin>>a[i];
-    vector<vector<int>> dp(n+1,vector<int>(k+1,inf));
-    pre[0]=a[0];
-    for(int i=1;i<n;i++)
+    int a,b,x;
+    cin>>a>>b>>x;
+    int ans=inf;
+    for (int i=0;i<32;i++)
     {
-        pre[i]=pre[i-1]+a[i];
+        int _b=b;
+        for (int j=0;j<32;j++)
+        {
+            ans=min(ans,abs(a-_b)+i+j);
+            _b/=x;
+        }
+        a/=x;
     }
-    st_table st(a);
-
-
-
-
+    cout<<ans<<endl;
 }
 
 signed main()
@@ -39,7 +38,11 @@ signed main()
     // freopen("test.out", "w", stdout);
 #endif
     int t = 1;
+    cin>>t;
     while (t--)
         solve();
     return 0;
 }
+//
+// Created by Administrator on 2026/6/14.
+//
