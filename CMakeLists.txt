@@ -20,5 +20,16 @@ foreach(src ${CPP_FILES})
             "c++/算法/前缀和，差分，离散化/Code_7_1371. 每个元音包含偶数次的最长子字符串.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/Code_1_1109. 航班预订统计.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/P4231 三步必杀.cpp"
-            "c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp")
+            "c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp"
+            "c++/算法/前缀和，差分，离散化/二维/差分/P3397 地毯.cpp"
+            "c++/算法/前缀和，差分，离散化/二维/差分/2132. 用邮票贴满网格图.cpp"
+            "c++/算法/前缀和，差分，离散化/二维/前缀和/304. 二维区域和检索 - 矩阵不可变.cpp"
+            "c++/算法/前缀和，差分，离散化/二维/前缀和/1139. 最大的以 1 为边界的正方形.cpp"
+            "c++/算法/前缀和，差分，离散化/二维/差分/LCP 74. 最强祝福力场.cpp"
+            "c++/cf/Codeforces Round 1084 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 1084 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 1084 (Div. 3)/D.cpp"
+            "c++/cf/Codeforces Round 1084 (Div. 3)/E.cpp"
+            c++/算法/【数学1】基础数学问题/F.cpp
+            "c++/cf/Codeforces Round 1084 (Div. 3)/F.cpp")
 endforeach()
