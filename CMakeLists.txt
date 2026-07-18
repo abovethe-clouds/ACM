@@ -63,5 +63,6 @@ foreach(src ${CPP_FILES})
             c++/比赛冲的/JNCPC/J.cpp
             c++/比赛冲的/JNCPC/G.cpp
             c++/比赛冲的/JNCPC/A.cpp
+            "c++/cf/Educational Codeforces Round 192 (Rated for Div. 2)/D.cpp"
     )
 endforeach()
