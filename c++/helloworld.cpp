@@ -31,21 +31,7 @@ bool judge(int a,int b,int c)
 }
 void solve()
 {
-    int x=read();
-    for (int i=0;i<=30;i++)
-    {
-        for (int j=0;j<=30;j++)
-        {
-            int y=(1<<i)|(1<<j);
-            if (y<x&&judge(x,y,x^y))
-            {
-                cout<<y<<endl;
-                return;
-            }
-
-        }
-    }
-    cout<<-1<<endl;
+    cout<<-6/4;
 }
 
 

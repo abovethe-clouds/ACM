@@ -5,12 +5,12 @@
       "args": [],
       "cwd": "${fileDirname}",
       "env": {
-        "PATH": "D:\\Program Files (x86)\\Embarcadero\\Dev-Cpp\\TDM-GCC-64\\bin;${env:PATH}"
+        "PATH": "E:\\Program Files\\JetBrains\\CLion 2025.2.4\\bin\\mingw\\bin;${env:PATH}"
       },
       "environment": [],
       "externalConsole": true,
       "internalConsosleOptions": "neverOpen",
-      "miDebuggerPath": "D:\\Program Files (x86)\\Embarcadero\\Dev-Cpp\\TDM-GCC-64\\bin\\gdb.exe",
+      "miDebuggerPath": "E:\\Program Files\\JetBrains\\CLion 2025.2.4\\bin\\mingw\\bin\\gdb.exe",
       "name": "single file debug",
       "preLaunchTask": "single file build",
       "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",

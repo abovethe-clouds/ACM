@@ -21,15 +21,48 @@ foreach(src ${CPP_FILES})
             "c++/算法/前缀和，差分，离散化/一维/差分/Code_1_1109. 航班预订统计.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/P4231 三步必杀.cpp"
             "c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp"
-            "c++/算法/前缀和，差分，离散化/二维/差分/P3397 地毯.cpp"
-            "c++/算法/前缀和，差分，离散化/二维/差分/2132. 用邮票贴满网格图.cpp"
-            "c++/算法/前缀和，差分，离散化/二维/前缀和/304. 二维区域和检索 - 矩阵不可变.cpp"
-            "c++/算法/前缀和，差分，离散化/二维/前缀和/1139. 最大的以 1 为边界的正方形.cpp"
-            "c++/算法/前缀和，差分，离散化/二维/差分/LCP 74. 最强祝福力场.cpp"
-            "c++/cf/Codeforces Round 1084 (Div. 3)/B.cpp"
-            "c++/cf/Codeforces Round 1084 (Div. 3)/C.cpp"
-            "c++/cf/Codeforces Round 1084 (Div. 3)/D.cpp"
-            "c++/cf/Codeforces Round 1084 (Div. 3)/E.cpp"
-            c++/算法/【数学1】基础数学问题/F.cpp
-            "c++/cf/Codeforces Round 1084 (Div. 3)/F.cpp")
+            "c++/cf/Codeforces Round 995 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 995 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 995 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 981 (Div. 3)/D.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/A.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/B.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/C.cpp"
+            "c++/cf/Codeforces Round 970 (Div. 3)/D.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1083 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1083 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1085 (Div. 1 + Div. 2)/C.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/C.cpp"
+            "c++/cf/Codeforces Round 1086 (Div. 2)/D.cpp"
+            "c++/计算几何/Projection .cpp"
+            c++/计算几何/Reflection.cpp
+            c++/计算几何/Counter-Clockwise.cpp
+            c++/计算几何/Orthogonal.cpp
+            c++/计算几何/Intersection.cpp
+            PTA/1.cpp
+            "c++/cf/Codeforces Round 1087 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1087 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1090 (Div. 4)/A.cpp"
+            "c++/cf/Codeforces Round 1090 (Div. 4)/B.cpp"
+            "c++/数据结构/二叉树/P8796 [蓝桥杯 2022 国 AC] 替换字符.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/A.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/B.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/C.cpp"
+            "c++/蓝桥/蓝桥杯 2022 省赛 C/D.cpp"
+            "c++/cf/Codeforces Round 1092 (Unrated, Div. 2, Based on THUPC 2026 — Finals)/A.cpp"
+            B.cpp
+            "c++/cf/Codeforces Round 1093 (Div. 2)/A.cpp"
+            c++/比赛冲的/JNCPC/F.cpp
+            c++/比赛冲的/JNCPC/J.cpp
+            c++/比赛冲的/JNCPC/G.cpp
+            c++/比赛冲的/JNCPC/A.cpp
+            "c++/cf/Educational Codeforces Round 192 (Rated for Div. 2)/D.cpp"
+    )
 endforeach()

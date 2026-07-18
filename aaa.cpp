@@ -1,100 +1,162 @@
-#include <iostream>
-#include <fstream>
-#include <vector>
-#include <string>
-#include <random>
-#include <algorithm>
-
-#ifdef _WIN32
-#include <windows.h>
-#endif
-
+#include<bits/stdc++.h>
 using namespace std;
-
-// 设置控制台编码
-void setConsoleEncoding() {
-#ifdef _WIN32
-    // Windows: 设置控制台为UTF-8
-    SetConsoleOutputCP(65001);
-    SetConsoleCP(65001);
-#endif
-    // Linux/Mac 通常默认使用UTF-8，不需要特殊设置
+#define fir first
+#define sec second
+#define endl "\n"
+typedef long long ll;
+typedef unsigned long long ull;
+typedef pair<int,int> pii;
+typedef pair<ll, ll> pll;
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=2e5+10;
+#define int ll
+struct  point
+{
+    ll sum,lazy=0,maxx;
+    point operator+ (const point q)const
+    {
+        point n;
+        n.sum=q.sum+sum;
+        n.lazy=0;
+        n.maxx=max(maxx,q.maxx);
+        return n;
+    }
+};
+point tree[maxn*4];
+int v[maxn];
+int ls(int x)
+{
+    return x*2;
 }
+int rs(int x)
+{
+    return x*2+1;
+}
+void push_up(int x)
+{
+    tree[x]=tree[ls(x)]+tree[rs(x)];
+    return;
+}
+void lazy_down(int root ,int l,int r,int add)
+{
+    tree[root].sum+=add*(r-l+1);
+    tree[root].lazy+=add;
+    tree[root].maxx+=add;
+    return;
+}
+void push_down(int root,int l,int r)
+{
+    if(l==r) return;
+    if(tree[root].lazy==0)
+    {
+        return;
+    }
+    int add=tree[root].lazy;
+    int mid=(l+r)/2;
+    lazy_down(ls(root),l,mid,add);
+    lazy_down(rs(root),mid+1,r,add);
 
-int main() {
-    setConsoleEncoding();
-
-    // 读取txt文件
-    ifstream inputFile("words.txt", ios::binary);
-
-    if (!inputFile.is_open()) {
-        cerr << "无法打开文件！请检查文件是否存在。" << endl;
-        return 1;
+    tree[root].lazy=0;
+}
+void add(int root,int L,int R,int l,int r,int ad)
+{
+    if(L<=l && r<=R)
+    {
+        tree[root].sum+=(r-l+1)*ad;
+        tree[root].maxx+=ad;
+        tree[root].lazy+=ad;
+        return;
+    }
+    push_down(root,l,r);
+    int mid=(l+r)/2;
+    if(L<=mid)
+    {
+        add(ls(root),L,R,l,mid,ad);
     }
 
-    vector<pair<string, string>> wordPairs; // 存储英文-中文对
-    string english, chinese;
-
-    // 读取文件内容
-    string content((istreambuf_iterator<char>(inputFile)),
-                   istreambuf_iterator<char>());
-    inputFile.close();
-
-    // 处理BOM头（如果有）
-    if (content.size() >= 3 &&
-        static_cast<unsigned char>(content[0]) == 0xEF &&
-        static_cast<unsigned char>(content[1]) == 0xBB &&
-        static_cast<unsigned char>(content[2]) == 0xBF) {
-        content = content.substr(3);
+    if(R>mid)
+    {
+        add(rs(root),L,R,mid+1,r,ad);
     }
 
-    // 分割成行并配对
-    vector<string> lines;
-    size_t pos = 0;
-    while (pos < content.size()) {
-        size_t end = content.find('\n', pos);
-        if (end == string::npos) end = content.size();
+    push_up(root);
+}
+point find(int root,int L,int R,int l,int r)
+{
+    if(L<=l && r<=R)
+    {
+        return tree[root];
+    }
+    push_down(root,l,r);
+    int mid=(l+r)/2;
+    if(R<=mid)
+    {
+        return find(ls(root),L,R,l,mid);
+    }
+    if(L>mid)
+    {
+        return find(rs(root),L,R,mid+1,r);
+    }
 
-        string line = content.substr(pos, end - pos);
-        // 去除回车符（如果有）
-        if (!line.empty() && line.back() == '\r') {
-            line.pop_back();
+    return find(ls(root),L,R,l,mid)
+         + find(rs(root),L,R,mid+1,r);
+}
+void built(int root,int l,int r)
+{
+    if(l==r)
+    {
+        tree[root].sum=v[l];
+        tree[root].lazy=0;
+        tree[root].maxx=v[l];
+        return;
+    }
+    int mid=(l+r)/2;
+    built(ls(root),l,mid);
+    built(rs(root),mid+1,r);
+    push_up(root);
+    return;
+}
+void solve()
+{
+    int n,m;
+    cin>>n>>m;
+    for (int i = 1; i < n+1; i++)
+    {
+        cin>>v[i];
+    }
+    built(1,1,n);
+    while(m--)
+    {
+        string s;
+        int l,r;
+        cin>>s>>l>>r;
+        if (s=="CHECK")
+        {
+            cout<<((find(1,l,r,1,n).maxx>=440)?"YES":"NO")<<endl;
         }
-
-        if (!line.empty()) {
-            lines.push_back(line);
-        }
-
-        pos = end + 1;
-    }
-
-    // 将英文和中文配对
-    for (size_t i = 0; i < lines.size(); i += 2) {
-        if (i + 1 < lines.size()) {
-            wordPairs.push_back(make_pair(lines[i], lines[i + 1]));
-        } else {
-            // 如果最后一行没有对应的中文，只添加英文
-            wordPairs.push_back(make_pair(lines[i], ""));
+        else
+        {
+            int x=find(1,l,r,1,n).sum;
+            x/=(r-l+1);
+            if (x>=360)
+                add(1,l,r,1,n,10);
+            else if (x>=100)
+                add(1,l,r,1,n,15);
+            else
+                add(1,l,r,1,n,20);
         }
     }
 
-    if (wordPairs.empty()) {
-        cerr << "文件中没有找到单词！" << endl;
-        return 1;
-    }
+}
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
 
-    cout << "共读取到 " << wordPairs.size() << " 个单词对" << endl;
-    cout << "按回车键显示下一个单词，按Ctrl+C退出" << endl;
-    cout << "==================" << endl;
-    random_device rd;
-    shuffle(wordPairs.begin(), wordPairs.end(), mt19937(rd()));
-    for (const auto& pair : wordPairs) {
-        cout << "英文: " << pair.first << endl;
-        cin.ignore(numeric_limits<streamsize>::max(), '\n');
-        cout << "中文: " << pair.second << endl;
-        cout << "==================" << endl;
+    int t = 1;
+    //cin >> t;
+    while(t --)
+        solve();
 
-
-    cout << "所有单词已显示完毕！" << endl;
     return 0;
 }

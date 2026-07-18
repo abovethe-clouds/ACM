@@ -4,54 +4,72 @@ using namespace std;
 #define sec second
 #define endl "\n"
 typedef long long ll;
-#define int ll
 typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
-const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-int read()
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=1e5;
+struct pt
 {
-    int x = 0, w = 1;
-    char ch = 0;
-    while (ch < '0' || ch > '9')
-    {
-        if (ch == '-') w = -1;
-        ch = getchar();
-    }
-    while (ch >= '0' && ch <= '9')
-    {
-        x = x * 10 + (ch - '0');
-        ch = getchar();
-    }
-    return x * w;
-}
-
+    int x, y;
+};
 void solve()
 {
-    string s;
-    cin>>s;
-    stack<char> st;
-    for (auto i: s)
+    // freopen("input.txt", "r", stdin);
+    // freopen("output.txt", "w", stdout);
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++)
     {
-        if (i=='(')
-            st.push(i);
-        else
+        cin >> a[i];
+        a[i]++;
+    }
+    int x1, y1, x2, y2;
+    cin >> x1 >> y1 >> x2 >> y2;
+    x1--, x2--;
+    vector<vector<int>> dis(101 ,vector<int>(maxn, -1));
+    queue<pii> q;
+    q.emplace(x1,y1);
+    dis[x1][y1]=0;
+    while (!q.empty())
+    {
+        auto [x, y] = q.front();
+        q.pop();
+        if (x == x2 && y == y2)
         {
-            if (i==')')
+            cout << dis[x][y] << endl;
+            return;
+        }
+        int next = dis[x][y] + 1;
+        if (y > 1 && dis[x][y-1] == -1)
+        {
+            dis[x][y-1] = next;
+            q.emplace(x, y - 1);
+        }
+        if (y < a[x] && dis[x][ y + 1] == -1)
+        {
+            dis[x][ y + 1] = next;
+            q.emplace(x, y + 1);
+        }
+        if (x > 0)
+        {
+            int minn = min(y, a[x - 1]);
+            if (dis[x - 1] [minn] == -1)
             {
-                if (st.empty()||st.top()!='(')
-                {
-                    cout<<"NO\n";
-                    return;
-                }
-                st.pop();
+                dis[x - 1][minn] = next;
+                q.push({x - 1, minn});
+            }
+        }
+        if (x + 1 < n)
+        {
+            int minn = min(y, a[x + 1]);
+            if (dis[x + 1][minn] == -1)
+            {
+                dis[x + 1][ minn] = next;
+                q.emplace(x + 1, minn);
             }
         }
     }
-    if (st.empty())
-        cout<<"YES"<<endl;
-    else
-        cout<<"NO"<<endl;
 }
 
 signed main()
@@ -60,11 +78,10 @@ signed main()
     cin.tie(nullptr);
     cout.tie(nullptr);
 #ifndef ONLINE_JUDGE
-    //freopen("test.in", "r", stdin);
-    //freopen("test.out", "w", stdout);
+
 #endif
     int t = 1;
-    //t = read();
+    //cin >> t;
     while (t--)
         solve();
     return 0;

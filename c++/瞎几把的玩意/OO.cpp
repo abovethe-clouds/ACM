@@ -1,37 +1,153 @@
-#include "cmath"
-#include"iostream"
+#include<bits/stdc++.h>
 using namespace std;
-int sand_clock_level,n;
-char symbol;
-void sand_clock(int n,int level)
+#define fir first
+#define sec second
+#define endl "\n"
+typedef long long ll;
+typedef unsigned long long ull;
+typedef pair<int,int> pii;
+typedef pair<ll, ll> pll;
+const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131,maxn=2e5+10;
+#define int ll
+struct  point
 {
-    if (n<((level*2)+1)*2) 
+    ll sum,lazy=0,maxx;
+    point operator+ (const point q)const
     {
-        sand_clock_level=level;
+        point n;
+        n.sum=q.sum+sum;
+        n.lazy=0;
+        n.maxx=max(maxx,q.maxx);
+        return n;
+    }
+};
+point tree[maxn*4];
+int v[maxn];
+int ls(int x)
+{
+    return x*2;
+}
+int rs(int x)
+{
+    return x*2+1;
+}
+void push_up(int x)
+{
+    tree[x]=tree[ls(x)]+tree[rs(x)];
+    return;
+}
+void lazy_down(int root ,int l,int r,int add)
+{
+    tree[root].sum+=add*(r-l+1);
+    tree[root].lazy+=add;
+    tree[root].maxx+=add;
+    return;
+}
+void push_down(int root,int l,int r)
+{
+    if(l==r) return;
+    if(tree[root].lazy==0)
+    {
         return;
     }
-    else return sand_clock((n-((level*2)+1)*2),level+1);
+    int add=tree[root].lazy;
+    int mid=(l+r)/2;
+    lazy_down(ls(root),l,mid,add);
+    lazy_down(rs(root),mid+1,r,add);
+
+    tree[root].lazy=0;
 }
-int main(){
+void add(int root,int L,int R,int l,int r,int ad)
+{
+    if(L<=l && r<=R)
+    {
+        tree[root].sum+=(r-l+1)*ad;
+        tree[root].maxx+=ad;
+        tree[root].lazy+=ad;
+        return;
+    }
+    push_down(root,l,r);
+    int mid=(l+r)/2;
+    if(L<=mid)
+    {
+        add(ls(root),L,R,l,mid,ad);
+    }
+
+    if(R>mid)
+    {
+        add(rs(root),L,R,mid+1,r,ad);
+    }
+
+    push_up(root);
+}
+point find(int root,int L,int R,int l,int r)
+{
+    if(L<=l && r<=R)
+    {
+        return tree[root];
+    }
+    push_down(root,l,r);
+    int mid=(l+r)/2;
+    if(R<=mid)
+    {
+        return find(ls(root),L,R,l,mid);
+    }
+    if(L>mid)
+    {
+        return find(rs(root),L,R,mid+1,r);
+    }
+
+    return find(ls(root),L,R,l,mid)
+         + find(rs(root),L,R,mid+1,r);
+}
+void built(int root,int l,int r)
+{
+    if(l==r)
+    {
+        tree[root].sum=v[l];
+        tree[root].lazy=0;
+        tree[root].maxx=v[l];
+        return;
+    }
+    int mid=(l+r)/2;
+    built(ls(root),l,mid);
+    built(rs(root),mid+1,r);
+    push_up(root);
+    return;
+}
+void solve()
+{
+    int n,m,s;
+    cin>>n>>m>>s;
+    for (int i = 1; i < n+1; i++)
+    {
+        v[i]=0;
+    }
+    built(1,1,n);
     int ans=0;
-    cin>>n>>symbol;
-    sand_clock(n-1,1);
-    for(int i=0;i<sand_clock_level;i++)
+    while(m--)
     {
-        for(int j=0;j<i;j++)
-        cout<<" ";
-        for(int j=0;j<2*(sand_clock_level-i)-1;j++)
-            {cout<<symbol;ans++;}
-        cout<<endl;
-    } 
-    for(int i=sand_clock_level-2;i>=0;i--)
-    {
-        for(int j=0;j<i;j++)
-        cout<<" ";
-        for(int j=0;j<2*(sand_clock_level-i)-1;j++)
-            {cout<<symbol;ans++;}
-        cout<<endl;
-    }     
-    cout<<n-ans;
+        int l,r;
+        cin>>l>>r;
+        if (find(1,l,r-1,1,n).maxx<s)
+        {
+            add(1,l,r-1,1,n,1);
+            ans++;
+        }
+    }
+    cout<<ans<<endl;
+
+}
+signed main()
+{
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+    cout.tie(nullptr);
+
+    int t = 1;
+    //cin >> t;
+    while(t --)
+        solve();
+
     return 0;
 }
