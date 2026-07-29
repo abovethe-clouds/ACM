@@ -9,15 +9,11 @@ typedef unsigned long long ull;
 typedef pair<int,int> pii;
 typedef pair<ll, ll> pll;
 const int mod = 1e9 + 7, inf = 0x3f3f3f3f, P = 131;
-bool equal(double a, double b)
-{
-    return fabs(a - b) <= 1e-7;
-}
 void solve()
 {
     int n;
     cin>>n;
-    vector<vector<double>> mat(n+1, vector<double>(n+2));
+    vector<vector<int>> mat(n+1, vector<int>(n+2));
     for (int i = 1; i <= n; i++)
         for (int j = 1; j <= n+1; j++)
             cin>>mat[i][j];
@@ -26,37 +22,38 @@ void solve()
         int x=i;
         for (int j=1;j<=n;j++)
         {
-            if (j<i&&!equal(mat[j][j],0))
+            if (j<i&&mat[j][j]==1)
                 continue;
-            if (abs(mat[j][i])>abs(mat[x][i]))
+            if (mat[j][i]==1)
+            {
                 x=j;
+                break;
+            }
         }
         swap(mat[x],mat[i]);
-        double u=mat[i][i];
-        if (!equal(u,0))
+        int u=mat[i][i];
+        if (u==1)
         {
-            for (int j=i;j<=n+1;j++)
-                mat[i][j]/=u;
             for (int j=1;j<=n;j++)
             {
-                if (i!=j)
+                if (i!=j&&mat[j][i]==1)
                 {
-                    double u=mat[j][i]/mat[i][i];
-                    for (int k=i;k<=n+1;k++)
-                        mat[j][k]-=u*mat[i][k];
+                    for (int k=1;k<=n+1;k++)
+                        mat[j][k]^=mat[i][k];
                 }
             }
         }
+
     }
     int sign=1;
     for (int i=1;i<=n;i++)
     {
-        if (equal(mat[i][i],0)&&!equal(mat[i][n+1],0))
+        if (mat[i][i]==0&&mat[i][n+1]!=0)
         {
             cout<<-1<<endl;
             return;
         }
-        if (equal(mat[i][i],0))
+        if (mat[i][i]==0)
         {
             sign=0;
         }
@@ -67,7 +64,7 @@ void solve()
         return;
     }
     for (int i=1;i<=n;i++)
-        cout<<fixed<<setprecision(2)<<"x"<<i<<"="<<mat[i][n+1]<<endl;
+        cout<<"x"<<i<<"="<<mat[i][n+1]<<endl;
 }
 
 signed main()
