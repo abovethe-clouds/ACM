@@ -47,11 +47,29 @@ void solve()
     int n, m;
     cin >> n >> m;
     vector<int> num(n + 1, inf),cnt(n+1,0);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < m; i++)
     {
-        int e1, e2, v;
-        cin >> e1 >> e2 >> v;
-        mp[e2].push_back({e1,v});
+        int op;
+        cin>>op;
+        if (op==1)
+        {
+            int e1,e2,v;
+            cin>>e1>>e2>>v;
+            mp[e1].emplace_back(e2,-v);
+        }
+        if (op==2)
+        {
+            int e1,e2,v;
+            cin>>e1>>e2>>v;
+            mp[e2].emplace_back(e1,v);
+        }
+        if (op==3)
+        {
+            int e1,e2;
+            cin>>e1>>e2;
+            mp[e2].emplace_back(e1,0);
+            mp[e1].emplace_back(e2,0);
+        }
     }
     num[0]=0;
     for (int i=1;i<=n;i++)
@@ -59,13 +77,10 @@ void solve()
     vector<int> dis(n+3);
     if (SPFA(0,n+1,dis))
     {
-        cout<<"NO"<<endl;
+        cout<<"No"<<endl;
         return;
     }
-    for (int i=1;i<=n;i++)
-    {
-        cout<<dis[i]<<" ";
-    }
+    cout<<"Yes"<<endl;
 
 }
 
