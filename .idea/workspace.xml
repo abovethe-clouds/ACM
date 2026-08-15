@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="6" type="long" />
     <option name="/Default/Environment/UserInterface/HierarchyView/ViewStyle/@EntryValue" value="SuperTypes" type="string" />
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
     <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
-    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="RiderCppLiveTemplatesSettings" type="string" />
+    <option name="/Default/Housekeeping/LiveTemplatesHousekeeping/HotspotSessionHintIsShown/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
     <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+  </component>
+  <component name="BackgroundAgentGlobalSettings">
+    <option name="selectedModelId" value="auto" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -20,7 +25,11 @@
     <option name="reloaded" value="true" />
   </component>
   <component name="CMakeRunConfigurationManager">
-    <generated />
+    <generated>
+      <config projectName="ACM" targetName="helloworld" />
+      <config projectName="ACM" targetName="make_data" />
+      <config projectName="ACM" targetName="aaa" />
+    </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
@@ -28,17 +37,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="add initial implementation for A.cpp with solve function and input handling">
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1108 (Div. 2)/A.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1108 (Div. 2)/B.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1108 (Div. 2)/C.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/A.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/B.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/C.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/D.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/E.cpp" afterDir="false" />
+    <list default="true" id="a0c8b729-6b35-4fd2-92f6-0fadf7ce475f" name="更改" comment="add initial implementation for P1993 小 K 的农场.cpp and update P5960 【模板】差分约束.cpp with SPFA function">
+      <change afterPath="$PROJECT_DIR$/.idea/developer-tools.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（6）/L.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（7）/1008.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（8）/1002.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（8）/1007.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（8）/test.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/A.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/B.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/C.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/D.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ACM2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ACM2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/B.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B.exe" beforeDir="false" afterPath="$PROJECT_DIR$/B.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloworld.exe" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld.exe" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +67,7 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
+      <entry key="_C:/Users/Administrator/CLionProjects/ACM" value="3Gft1XwRfVY9qu5QVzbRe5V2zX0" />
       <entry key="_D:/code/ACM" value="32SzKGPaVxAyxz4qUR6OcK4pCyL" />
     </persistenceIdMap>
   </component>
@@ -62,6 +80,7 @@
       <entry key="agent-panel" value="Gemini 3 Pro (Preview)" />
     </selectedModels>
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -78,127 +97,17 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;git@github.com:abovethe-clouds/ACM.git&quot;,
-    &quot;accountId&quot;: &quot;187302d7-51f2-4d7e-8fd5-f54c9440ef82&quot;
+    &quot;url&quot;: &quot;https://github.com/abovethe-clouds/ACM.git&quot;,
+    &quot;accountId&quot;: &quot;dd0b5844-a2e1-408e-ba5f-ef156df5f596&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///dummy.cpp" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/c++/算法/前缀和，差分，离散化/P1314 [NOIP2011 提高组] 聪明的质监员.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/c++/算法/前缀和，差分，离散化/一维/差分/P5026 Lycanthropy.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/c++/算法/前缀和，差分，离散化/二维/差分/P3397 地毯.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="27ZNyxza" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -206,6 +115,21 @@
   <component name="ProjectId" id="32SzKGPaVxAyxz4qUR6OcK4pCyL" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKTREE" />
+      </template>
+    </option>
   </component>
   <component name="ProjectStatusUIService">{
   &quot;uiKindId&quot;: &quot;Widget&quot;
@@ -217,7 +141,14 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;C/C++ 文件.#114. k 大异或和.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.#114. k 大异或和.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.1.cpp.executor&quot;: &quot;Debug&quot;,
+    &quot;C/C++ 文件.1001.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.1003.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.1005.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.1007.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.1008.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.A.cpp (1).executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.A.cpp (2).executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.A.cpp (3).executor&quot;: &quot;Run&quot;,
@@ -238,23 +169,35 @@
     &quot;C/C++ 文件.G.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.Intersection.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.J.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.L.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.Orthogonal.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P10505 Dropping Test.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P1060 [NOIP 2006 普及组] 开心的金明.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P1278 单词游戏.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P1359 租用游艇.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P1993 小 K 的农场.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P1996 约瑟夫问题.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P2014 [CTSC1997] 选课.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P2455 [SDOI2006] 线性方程组.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P3369 【模板】普通平衡树.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P3389 【模板】高斯消元法.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P3605 [USACO17JAN] Promotion Counting P.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P3812 【模板】线性基.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.P4391 [BalticOI 2009] Radio Transmission 无线传输.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.P5960 【模板】差分约束.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.Projection .cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.Reflection.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.[CACC2024区域赛] 区间奇偶数操作.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.aaa.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.b.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ 文件.c.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.duipai.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.helloworld.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.kmp.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.out.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.text_time.cpp.executor&quot;: &quot;Run&quot;,
     &quot;C/C++ 文件.对拍.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake 应用程序.helloworld.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;Python.11.executor&quot;: &quot;Run&quot;,
     &quot;Python.Atest.executor&quot;: &quot;Run&quot;,
@@ -267,6 +210,7 @@
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
@@ -279,7 +223,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C++&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -288,9 +232,25 @@
       <recent name="D:\code\ACM" />
     </key>
   </component>
-  <component name="RunManager" selected="C/C++ 文件.D.cpp">
-    <configuration name="A.cpp (3)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="A.cpp" CONFIG_NAME="A.cpp">
-      <option name="sourceFile" value="c++\cf\Codeforces Round 1109 (Div. 3)\A.cpp" />
+  <component name="RunManager" selected="C/C++ 文件.1007.cpp">
+    <configuration name="aaa" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="aaa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ACM" RUN_TARGET_NAME="aaa">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="make_data" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ACM" TARGET_NAME="make_data" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ACM" RUN_TARGET_NAME="make_data">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1007.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="1007.cpp" CONFIG_NAME="1007.cpp">
+      <option name="sourceFile" value="c++\XCPC\2026“钉耙编程”中国大学生算法设计暑期联赛（8）\1007.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="1008.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="1008.cpp" CONFIG_NAME="1008.cpp">
+      <option name="sourceFile" value="c++\XCPC\2026“钉耙编程”中国大学生算法设计暑期联赛（7）\1008.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -302,44 +262,40 @@
       </method>
     </configuration>
     <configuration name="B.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="B.cpp" CONFIG_NAME="B.cpp">
-      <option name="sourceFile" value="c++\cf\Codeforces Round 1109 (Div. 3)\B.cpp" />
+      <option name="sourceFile" value="B.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="B.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="B.cpp" CONFIG_NAME="B.cpp">
+      <option name="sourceFile" value="c++\cf\Educational Codeforces Round 193 (Rated for Div. 2)\B.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="C.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="C.cpp" CONFIG_NAME="C.cpp">
-      <option name="sourceFile" value="c++\cf\Codeforces Round 1109 (Div. 3)\C.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="D.cpp" CONFIG_NAME="D.cpp">
-      <option name="sourceFile" value="c++\cf\Codeforces Round 1109 (Div. 3)\D.cpp" />
-      <method v="2">
-        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="E.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="11.py" TARGET_NAME="E.cpp" CONFIG_NAME="E.cpp">
-      <option name="sourceFile" value="c++\cf\Codeforces Round 1109 (Div. 3)\E.cpp" />
+      <option name="sourceFile" value="c++\cf\Educational Codeforces Round 193 (Rated for Div. 2)\C.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="C/C++ 文件.A.cpp (3)" />
+      <item itemvalue="CMake 应用程序.aaa" />
+      <item itemvalue="CMake 应用程序.make_data" />
+      <item itemvalue="C/C++ 文件.1007.cpp" />
+      <item itemvalue="C/C++ 文件.1008.cpp" />
       <item itemvalue="C/C++ 文件.A.cpp" />
       <item itemvalue="C/C++ 文件.B.cpp (1)" />
+      <item itemvalue="C/C++ 文件.B.cpp" />
       <item itemvalue="C/C++ 文件.C.cpp" />
-      <item itemvalue="C/C++ 文件.D.cpp" />
-      <item itemvalue="C/C++ 文件.E.cpp" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="C/C++ 文件.D.cpp" />
-        <item itemvalue="C/C++ 文件.E.cpp" />
-        <item itemvalue="C/C++ 文件.C.cpp" />
+        <item itemvalue="C/C++ 文件.1007.cpp" />
         <item itemvalue="C/C++ 文件.B.cpp (1)" />
-        <item itemvalue="C/C++ 文件.A.cpp (3)" />
+        <item itemvalue="C/C++ 文件.1008.cpp" />
+        <item itemvalue="C/C++ 文件.C.cpp" />
+        <item itemvalue="C/C++ 文件.B.cpp" />
       </list>
     </recent_temporary>
   </component>
@@ -538,6 +494,49 @@
       <workItem from="1784039408273" duration="5856000" />
       <workItem from="1784048318223" duration="938000" />
       <workItem from="1784359116132" duration="10000" />
+      <workItem from="1784374238601" duration="7393000" />
+      <workItem from="1784436211860" duration="1454000" />
+      <workItem from="1784467664564" duration="1590000" />
+      <workItem from="1784474696760" duration="3604000" />
+      <workItem from="1784554594283" duration="9124000" />
+      <workItem from="1784642080032" duration="2003000" />
+      <workItem from="1784687407928" duration="4076000" />
+      <workItem from="1784709141799" duration="4553000" />
+      <workItem from="1784715102661" duration="2909000" />
+      <workItem from="1784789581245" duration="5000" />
+      <workItem from="1784789600690" duration="131000" />
+      <workItem from="1784789835773" duration="848000" />
+      <workItem from="1784790748020" duration="598000" />
+      <workItem from="1784801995248" duration="1500000" />
+      <workItem from="1784810512619" duration="13000" />
+      <workItem from="1784885293988" duration="3851000" />
+      <workItem from="1784903038285" duration="4296000" />
+      <workItem from="1785038901741" duration="2414000" />
+      <workItem from="1785076169202" duration="266000" />
+      <workItem from="1785076447625" duration="5715000" />
+      <workItem from="1785083456237" duration="1291000" />
+      <workItem from="1785166900780" duration="1799000" />
+      <workItem from="1785213383973" duration="5931000" />
+      <workItem from="1785319508338" duration="46000" />
+      <workItem from="1785334030384" duration="702000" />
+      <workItem from="1785337773363" duration="4036000" />
+      <workItem from="1785645905959" duration="9000" />
+      <workItem from="1785987435741" duration="2729000" />
+      <workItem from="1786113315762" duration="5179000" />
+      <workItem from="1786166452351" duration="113000" />
+      <workItem from="1786166593445" duration="1000" />
+      <workItem from="1786247794322" duration="634000" />
+      <workItem from="1786253615201" duration="1918000" />
+      <workItem from="1786423483871" duration="695000" />
+      <workItem from="1786508880249" duration="109000" />
+      <workItem from="1786541563443" duration="31000" />
+      <workItem from="1786602987058" duration="6988000" />
+      <workItem from="1786611572962" duration="850000" />
+      <workItem from="1786612619929" duration="393000" />
+      <workItem from="1786696371802" duration="3050000" />
+      <workItem from="1786706801603" duration="573000" />
+      <workItem from="1786708990386" duration="1928000" />
+      <workItem from="1786758307033" duration="12000" />
     </task>
     <task id="LOCAL-00001" summary="sel">
       <option name="closed" value="true" />
@@ -739,7 +738,31 @@
       <option name="project" value="LOCAL" />
       <updated>1783871338889</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="add initial implementation for 1001.cpp and new solutions for B.cpp, C.cpp, D.cpp, and other problem files">
+      <option name="closed" value="true" />
+      <created>1784712821723</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1784712821723</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add initial implementation for 1001.cpp and new solutions for B.cpp, C.cpp, D.cpp, and other problem files">
+      <option name="closed" value="true" />
+      <created>1785334095835</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1785334095835</updated>
+    </task>
+    <task id="LOCAL-00028" summary="add initial implementation for P1993 小 K 的农场.cpp and update P5960 【模板】差分约束.cpp with SPFA function">
+      <option name="closed" value="true" />
+      <created>1785987554783</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1785987554783</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -777,7 +800,10 @@
     <MESSAGE value="sel" />
     <MESSAGE value="refactor: clean up code and add new Minesweeper game implementation" />
     <MESSAGE value="add initial implementation for A.cpp with solve function and input handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="add initial implementation for A.cpp with solve function and input handling" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;CMakeLists.txt&#10;#&#9;helloworld.cpp&#10;#&#9;helloworld.exe" />
+    <MESSAGE value="add initial implementation for 1001.cpp and new solutions for B.cpp, C.cpp, D.cpp, and other problem files" />
+    <MESSAGE value="add initial implementation for P1993 小 K 的农场.cpp and update P5960 【模板】差分约束.cpp with SPFA function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add initial implementation for P1993 小 K 的农场.cpp and update P5960 【模板】差分约束.cpp with SPFA function" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -806,6 +832,21 @@
           <url>file://$PROJECT_DIR$/c++/cf/Codeforces Round 1109 (Div. 3)/D.cpp</url>
           <line>28</line>
           <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/c++/算法/【数学1】基础数学问题/P3389 【模板】高斯消元法.cpp</url>
+          <line>15</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/c++/算法/【数学1】基础数学问题/P2455 [SDOI2006] 线性方程组.cpp</url>
+          <line>51</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（3）/1005.cpp</url>
+          <line>91</line>
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

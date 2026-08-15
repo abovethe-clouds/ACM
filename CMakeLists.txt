@@ -64,5 +64,39 @@ foreach(src ${CPP_FILES})
             c++/比赛冲的/JNCPC/G.cpp
             c++/比赛冲的/JNCPC/A.cpp
             "c++/cf/Educational Codeforces Round 192 (Rated for Div. 2)/D.cpp"
+            "c++/cf/Codeforces Round 1110, Div. 1 + Div. 2/A.cpp"
+            "c++/cf/Codeforces Round 1110, Div. 1 + Div. 2/B.cpp"
+            "c++/atc/AtCoder Beginner Contest 467/A.cpp"
+            "c++/atc/AtCoder Beginner Contest 467/c.cpp"
+            "c++/atc/AtCoder Beginner Contest 467/b.cpp"
+            "c++/atc/AtCoder Beginner Contest 467/D.cpp"
+            "c++/atc/AtCoder Beginner Contest 467/D.h"
+            "c++/cf/Codeforces Round 1087 (Div. 2)/C.cpp"
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（1）/1001.cpp
+            "c++/matiji/2025/MC0451 序列权值.cpp"
+            "c++/算法/dp/P1359 租用游艇.cpp"
+            "c++/算法/dp/P1060 [NOIP 2006 普及组] 开心的金明.cpp"
+            "c++/算法/dp/P1802 5 倍经验日.cpp"
+            "c++/算法/【数学1】基础数学问题/P3389 【模板】高斯消元法.cpp"
+            "c++/算法/【数学1】基础数学问题/P2455 [SDOI2006] 线性方程组.cpp"
+            "c++/算法/【数学1】基础数学问题/P3812 【模板】线性基.cpp"
+            "c++/算法/【数学1】基础数学问题/#114 k 大异或和.cpp"
+            "c++/算法/【数学1】基础数学问题/P10505 Dropping Test.cpp"
+            "c++/cf/Codeforces Round 1112 (Div. 2)/A.cpp"
+            "c++/cf/Codeforces Round 1112 (Div. 2)/B.cpp"
+            "c++/cf/Codeforces Round 1112 (Div. 2)/C.cpp"
+            "c++/cf/Codeforces Round 1112 (Div. 2)/D.cpp"
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（3）/1005.cpp
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（3）/1003.cpp
+            "c++/算法/图论/P5960 【模板】差分约束.cpp"
+            "c++/算法/图论/P1993 小 K 的农场.cpp"
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（6）/L.cpp
+            "c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/A.cpp"
+            "c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/B.cpp"
+            "c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/C.cpp"
+            "c++/cf/Educational Codeforces Round 193 (Rated for Div. 2)/D.cpp"
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（7）/1008.cpp
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（8）/1007.cpp
+            c++/XCPC/2026“钉耙编程”中国大学生算法设计暑期联赛（8）/1002.cpp
     )
 endforeach()

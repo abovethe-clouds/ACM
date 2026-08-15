@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <excludedPredefinedLibrary name="ACM/cmake-build-debug/CMakeFiles/ACM.dir/boost_1_90_0/libs/dynamic_bitset/doc/node_modules" />
+    <excludedPredefinedLibrary name="ACM/cmake-build-debug/CMakeFiles/ACM.dir/boost_1_90_0/libs/openmethod/doc/node_modules" />
+    <excludedPredefinedLibrary name="ACM/cmake-build-debug/CMakeFiles/ACM.dir/boost_1_90_0/libs/redis/doc/node_modules" />
+  </component>
+</project>
